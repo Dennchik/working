@@ -1,0 +1,23 @@
+﻿@import "null", "color", "grid";
+
+.logo {
+	display: block;
+	background-size: contain;
+	background-image: url(../img/logotipe.png);
+	max-width: 100%;
+}
+
+.left-name {
+	line-height: 30px;
+	text-align: center;
+	height: 30px;
+	margin-bottom: 1px;
+}
+
+.wrapper {
+	height: auto;
+	max-width: 1300px;
+	min-height: 100vh;
+	margin: 0 auto;
+	
+}

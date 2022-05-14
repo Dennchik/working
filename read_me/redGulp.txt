@@ -1,0 +1,69 @@
+@@ -1,68 +0,0 @@
+﻿1. Если вы ранее устанавливали gulp глобально, запустите
+	- npm rm --global gulp, прежде чем следовать этим инструкциям.
+Для получения дополнительной информации прочтите этот раздел. (для удаления)
+2. Check for node, npm, and npx
+	-   node --version
+	-   npm --version
+	-   npx --version
+3. Install the gulp command line utility
+	-   npm install --global gulp-cli
+4. Create a project directory and navigate into it (Создайте каталог проекта и перейдите в него)
+	-   npx mkdirp my-project
+	-   cd my-project
+5. Create a package.json file in your project directory (Create a package.json file in your project directory)
+	-   npm init
+6.  Install the gulp package in your devDependencies (Установите пакет gulp в devDependencies)
+    -   npm install --save-dev gulp
+7.  Verify your gulp versions
+    - gulp --version
+8.  Create a gulpfile.js
+    (Using your text editor, create a file named gulpfile.js in your project root with these contents:
+
+    function defaultTask(cb) {
+        // place code for your default task here
+        cb();
+    }
+
+    exports.default = defaultTask)
+9.  Test it
+    -   gulp
+    Result:
+[04:42:16] Using gulpfile D:\Web development\MyProjects\my-project\gulpfile.js
+[04:42:16] Starting 'default'...
+[04:42:16] Finished 'default' after 2.36 ms
+_____________________
+ все OK
+10. Теперь установим autoprefixer, для этого наберем команду
+    -   npm install --save-dev gulp-autoprefixer
+
+11. Установка модуля: requireDir()
+    -   npm i require-dir --save-dev
+    -   npm i postcss-loader --save-dev
+________________________________________
+установить плагин- это (npm i $PLUGIN-NAME$ --save-dev)
+gulp --tasks :- список всех заданных задач
+
+Локально (говорят так правильнее):
+открываем терминал в phpstorm (ну или просто консоль node.js в корне нашего проекта) и делаем
+
+npm install --save-dev gulp
+npm install --save-dev gulp-sass
+npm install --save-dev gulp-postcss
+npm install --save-dev gulp-sourcemaps
+npm install --save-dev autoprefixer-core
+npm install --save-dev gulp-csso
+_________________________________________
+Create a gulpfile#
+Using your text editor, create a file named gulpfile.js in your project root with these contents:
+
+function defaultTask(cb) {
+  // place code for your default task here
+  cb();
+}
+
+exports.default = defaultTask
+_____________________________________________
+npm install -g autoprefixer
+postcss ./css/style.css --use postcss-import --use autoprefixer --no-map --output .css
+postcss ./css/style.css --output ./styles.css
