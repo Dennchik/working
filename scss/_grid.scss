@@ -1,5 +1,4 @@
 .grid-conteiner {
-	border: 3px solid #7fa0de;
 	display: grid;
 	grid-template-areas:
 		"header"
@@ -30,7 +29,6 @@
 	}
 }
 .top {
-	border: 2px solid #b0e20a;
 	display: flex;
 	margin: 0 0.5em;
 	height: 100%;
@@ -82,7 +80,6 @@
 }
 
 .middle {
-	border: 2px solid #c013b7;
 	display: flex;
 	margin: 0 0.5em;
 
