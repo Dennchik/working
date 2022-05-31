@@ -1,0 +1,54 @@
+@import "variables", "header", "form-serch", "menu", "grid", "sidebar", "modifiers", "animation", "null", "bg-grid", "fa-icon";
+
+.menu {
+	position: sticky;
+	top: 0;
+	height: 40px;
+}
+
+.grid-list {
+	position: relative;
+	display: grid;
+	height: 100%;
+	grid-template-columns: 136px repeat(7, 1fr) 136px;
+	grid-gap: 0 0.5rem;
+
+}
+
+.grid-list>li {
+	line-height: 32px;
+	text-align: center;
+	transition: 1s;
+}
+
+.content {
+	/* Скрываем сразу контент */
+	display: block;
+}
+
+// .wrapper a:hover~.content {
+// 	/* При наведении на ссылку в раппере, откроется контент */
+// 	display: block;
+// 	color: red;
+// }
+
+
+
+div.sidenav__link ul ul {
+	display: none;
+}
+
+div.menu-bar li:hover>ul {
+	display: block;
+	color: red;
+	padding: 0 0.5rem;
+	transition: 1s;
+}
+
+
+
+
+
+
+
+

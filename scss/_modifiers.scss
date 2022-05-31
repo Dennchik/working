@@ -1,0 +1,43 @@
+.h1grad {
+	color: transparent;
+	font-size: var(--font-l);
+	background-image: linear-gradient(to bottom, #00050c 30%, #13b5d1 50%, #00050c 80%);
+	text-transform: uppercase;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.sticky-top {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	border-top: 1px solid #4e4e4f;
+	border-bottom: 1px solid #4e4e4f;
+}
+
+.sticky-bottom {
+	position: sticky;
+	bottom: 0;
+	z-index: 2;
+	border-top: 1px solid #4e4e4f;
+	border-bottom: 1px solid #4e4e4f;
+}
+
+.sticky {
+	position: fixed;
+	top: 2.5rem;
+	width: 100%;
+}
+
+.active {
+	line-height: 25px;
+	width: 90%;
+	margin-left: 0.5rem;
+	vertical-align: middle;
+}
+
+.wrapp-shadow {
+	box-shadow: var(--box-shm-d);
+	background-color: var(--bg-color-13);
+}

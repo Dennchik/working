@@ -1,0 +1,138 @@
+html {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #212121;
+  background-image: -webkit-gradient(linear, right top, left top, from(#212121), to(#212121));
+  background-image: -webkit-linear-gradient(right, #212121 0%, #212121 100%);
+  background-image: -o-linear-gradient(right, #212121 0%, #212121 100%);
+  background-image: linear-gradient(270deg, #212121 0%, #212121 100%);
+  -webkit-font-smoothing: antialiased;
+  border: 0px solid red;
+}
+
+body {
+  height: auto;
+  background-color: #212121;
+  color: #96b9d0;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  background: -webkit-linear-gradient(60deg, #000000 10%, #151414 40%, #000000 80%) no-repeat;
+  background: -o-linear-gradient(60deg, #000000 10%, #151414 40%, #000000 80%) no-repeat;
+  background: linear-gradient(30deg, #000000 10%, #151414 40%, #000000 80%) no-repeat;
+  border: 0px solid green;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0 none;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -moz-box-sizing: inherit;
+}
+
+a:hover {
+  color: #ff6532;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #0bd1e7;
+  font-style: italic;
+}
+
+a:visited {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  vertical-align: middle;
+}
+
+span {
+  color: #ff6532;
+  font-style: italic;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  /* IE10 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* IE10 */
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  /* IE10 */
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}

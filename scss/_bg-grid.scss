@@ -1,0 +1,26 @@
+.bg-grid {
+	z-index: 0;
+	background-image: url(../img/grid.png);
+	background-size: 100% 100%;
+	opacity: 0.05;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	color: #ffffff;
+
+	&__grid-wrapper {
+		height: 100%;
+	}
+
+	&__grid-content {
+		width: 8.333%;
+		margin: 0;
+		height: 100%;
+		float: left;
+		border-right: 1px solid #f7f7f7;
+		z-index: 999;
+	}
+}

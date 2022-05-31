@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Document|краткое название</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content='true' name='HandheldFriendly' />
+	<meta content='width' name='MobileOptimized' />
+	<meta name="description" content="Краткое описание документа.">
+	<meta name="keywords" content="keywords-ключевые слова для поиска">
+	<link rel="stylesheet" href="css/side-nav-menu.css" type="text/css">
+
+
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div id="sideopen" class="sidenav">
+			<a href="#" id="about">About</a>
+			<a href="#" id="blog">Blog</a>
+			<a href="#" id="projects">Projects</a>
+			<a href="#" id="contact">Contact</a>
+		</div>
+
+		<div id="main">
+			<h2>Hoverable Sidenav Buttons</h2>
+			<p>Hover over the buttons in the left side navigation to open them.</p>
+
+		</div>
+	</div>
+	<script>
+	var sideopen = document.getElementById('sideopen');
+	sideopen.onmouseenter = function openNav() {
+		document.getElementById("sideopen").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
+	sideopen.onmouseleave = function closeNav() {
+		document.getElementById("sideopen").style.width = "0";
+		document.getElementById("main").style.marginLeft = "0";
+	}
+	</script>
+</body>
+
+</html>

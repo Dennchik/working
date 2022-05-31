@@ -1,0 +1,140 @@
+#top-menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#top-menu>ul>li {
+	float: left;
+}
+
+#top-menu>ul>li>ul {
+	top: 100%;
+	left: 0;
+}
+
+#top-menu li {
+	position: relative;
+}
+
+#top-menu a {
+	display: block;
+	white-space: nowrap;
+}
+
+#top-menu ul li li ul {
+	top: 0;
+	left: 100%;
+}
+
+#top-menu ul ul {
+	visibility: hidden;
+	position: absolute;
+	
+}
+
+#top-menu li:hover>ul {
+	visibility: visible;
+}
+#top-menu {
+	padding: 0 5px;
+}
+
+#top-menu,
+#top-menu>ul {
+	background-color: #9DA4AD;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#top-menu:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#top-menu a {
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 5px 10px 5px 10px;
+	line-height: 1.2;
+}
+
+#top-menu>ul>li>a {
+	padding: 5px 10px;
+	margin: 2px 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#top-menu>ul>li>ul+a {
+	padding-bottom: 7px;
+	margin-bottom: 0;
+}
+
+#top-menu>ul>li>ul+a:after {
+	content: " \25bc";
+}
+
+#top-menu>ul>li:hover>a {
+	background-color: #4672B3;
+}
+
+#top-menu>ul>li:hover>ul+a {
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+#top-menu>ul>li>ul {
+	min-width: 100%;
+	background-color: rgb(70, 114, 179);
+	background-color: rgba(70, 114, 179, 0.8);
+}
+
+#top-menu>ul>li li>ul+a:after {
+	content: " \25b6";
+}
+
+#top-menu>ul>li>ul>li:last-child,
+#top-menu>ul>li>ul {
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+#top-menu ul li li:hover,
+#top-menu ul li li ul,
+#top-menu ul li li ul li:hover {
+	background-color: rgb(124, 147, 178);
+	background-color: rgba(124, 147, 178, 0.8);
+}
+#top-menu>ul>li>ul,
+#top-menu ul li li ul {
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	-o-transition: all 300ms;
+	transition: all 300ms;
+}
+
+#top-menu>ul>li>ul {
+	top: 400%;
+	opacity: 0;
+}
+
+#top-menu>ul>li:hover>ul {
+	top: 100%;
+	opacity: 1;
+}
+
+#top-menu ul li ul li ul {
+	left: 400%;
+	opacity: 0;
+}
+
+#top-menu ul li ul li:hover ul {
+	left: 100%;
+	opacity: 1;
+}

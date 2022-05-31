@@ -1,54 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<title>Page Not Found</title>
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<style>
-		*{
-			line-height: 1.2;
-			margin: 0;
-		}
-		html{
-			color: #888;
-			display: table;
-			font-family: sans-serif;
-			height: 100%;
-			text-align: center;
-			width: 100%;
-		}
-		body{
-			display: table-cell;
-			vertical-align: middle;
-			margin: 2em auto;
-		}
-		h1{
-			color: #555;
-			font-size: 2em;
-			font-weight: 400;
-		}
-		p{
-			margin: 0 auto;
-			width: 280px;
-		}
-		@media only screen and (max-width: 280px){
-			body,
-			p{
-				width: 95%;
-			}
-			h1{
-				font-size: 1.5em;
-				margin: 0 0 0.3em;
-			}
-		}
-	</style>
+<title>Document|краткое название</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content='true' name='HandheldFriendly' />
+<meta content='width' name='MobileOptimized' />
+<meta name="description" content="Краткое описание документа.">
+<meta name="keywords" content="keywords-ключевые слова для поиска">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="src/side-bar.js"></script>
 </head>
-
 <body>
-<h1>Page Not Found</h1>
-<p>Sorry, but the page you were trying to view does not exist.</p>
-</body>
+<style>
+	[id^="raz"] {
+		padding: 3em 30%;
+		background: green;
+	}
 
+	[id^="raz"] div {
+		min-height: 4em;
+		background: blue;
+	}
+</style>
+
+<div id="raz0">
+	<div></div>
+</div>
+
+
+</div>
+</body>
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->

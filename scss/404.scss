@@ -1,0 +1,41 @@
+@import "null";
+
+.wrapper {border: 2px solid blue;
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+
+		&__wrapp {border: 5px solid red;
+			
+		
+		}
+	&__glob {border: 5px solid green;
+	display: block;
+	background-size: 100%;
+	background-image: url(../img/logotipe.png);
+	max-width: 100%;
+}
+}
+p {
+	clear: none;
+}
+input[type="search"] {
+	width: 100%;
+	height: 28px;
+	font-size: 14px;
+	background-color: #212121;
+	border: 1px solid #4e4e4f;
+	color: #96b9d0;
+	border-radius: 0px;
+	border-color: #4e4e4f;
+}
+
+
+input:hover {
+	border: 1px solid #0c97dc;
+}
+
+input {
+	outline: #212121;
+	background-image: linear-gradient(180deg, rgba(1, 18, 24, 0.534) 20%, rgb(86, 197, 231) 70%, rgba(0, 18, 24, 0.829) 10%);
+}

@@ -1,50 +1,87 @@
-﻿// ? Обнуляющий код
-* {
-	padding: 0;
-	margin: 0;
-	border: 0;
-}
-
-*:before,
-*:after {
-	box-sizing: border-box;
-}
-
-* {
-	box-sizing: border-box;
-}
-
-a:visited {
-	color: #fff;
-	text-emphasis: none;
-	vertical-align: middle;
-	-webkit-text-emphasis: none;
-}
-
-.div {
-	box-sizing: border-box;
-	min-width: 100%;
-	min-height: 100%;
-}
-
+﻿@charset "utf-8";
+// ? Обнуляющий код
 html {
 	width: 100%;
 	height: auto;
-	font-size: 100%;
+	font-size: 16px;
 	line-height: 1;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-wekit-text-size-ajast: 100%;
-	background-color:  #212121;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-color: #212121;
 	background-image: linear-gradient(270deg, #212121 0%, #212121 100%);
 	-webkit-font-smoothing: antialiased;
+	border: 0px solid rgb(0, 17, 255);
 }
 
 body {
 	height: auto;
-	background-color: #212121;
-	color: #fbf96d;
+	background-color: #14171a;
+	color: #96b9d0cb;
 	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-	background: linear-gradient(30deg, #000000 10%, #151414 40%, #000000 80%) no-repeat;
 
+	border: 0px solid rgb(251, 255, 0);
 }
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0 none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	-moz-box-sizing: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+a:hover {
+	color: var(--a-hover);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	font-style: italic;
+}
+
+a:visited {
+	text-emphasis: none;
+	vertical-align: middle;
+}
+
+span {
+	color: #ff6532;
+	font-style: italic;
+}
+
+p {
+	margin: 0.5em 0;
+}
+
+// * {border: 0px solid green !important;}

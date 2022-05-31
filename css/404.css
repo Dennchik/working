@@ -1,0 +1,134 @@
+html {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #212121;
+  background-image: -webkit-gradient(linear, right top, left top, from(#212121), to(#212121));
+  background-image: -webkit-linear-gradient(right, #212121 0%, #212121 100%);
+  background-image: -o-linear-gradient(right, #212121 0%, #212121 100%);
+  background-image: linear-gradient(270deg, #212121 0%, #212121 100%);
+  -webkit-font-smoothing: antialiased;
+  border: 0px solid #0011ff;
+}
+
+body {
+  height: auto;
+  background-color: #14171a;
+  color: #96b9d0cb;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  border: 0px solid #fbff00;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0 none;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -moz-box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  color: var(--a-hover);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  font-style: italic;
+}
+
+a:visited {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  vertical-align: middle;
+}
+
+span {
+  color: #ff6532;
+  font-style: italic;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+.wrapper {
+  border: 2px solid blue;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+.wrapper__wrapp {
+  border: 5px solid red;
+}
+
+.wrapper__glob {
+  border: 5px solid green;
+  display: block;
+  background-size: 100%;
+  background-image: url(../img/logotipe.png);
+  max-width: 100%;
+}
+
+p {
+  clear: none;
+}
+
+input[type="search"] {
+  width: 100%;
+  height: 28px;
+  font-size: 14px;
+  background-color: #212121;
+  border: 1px solid #4e4e4f;
+  color: #96b9d0;
+  border-radius: 0px;
+  border-color: #4e4e4f;
+}
+
+input:hover {
+  border: 1px solid #0c97dc;
+}
+
+input {
+  outline: #212121;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(1, 18, 24, 0.534)), color-stop(70%, #56c5e7), color-stop(10%, rgba(0, 18, 24, 0.829)));
+  background-image: -webkit-linear-gradient(top, rgba(1, 18, 24, 0.534) 20%, #56c5e7 70%, rgba(0, 18, 24, 0.829) 10%);
+  background-image: -o-linear-gradient(top, rgba(1, 18, 24, 0.534) 20%, #56c5e7 70%, rgba(0, 18, 24, 0.829) 10%);
+  background-image: linear-gradient(180deg, rgba(1, 18, 24, 0.534) 20%, #56c5e7 70%, rgba(0, 18, 24, 0.829) 10%);
+}

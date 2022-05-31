@@ -1,0 +1,75 @@
+.wrapper {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  background-size: contain 100%;
+}
+
+.hed {
+  display: block;
+  background-image: url(/font/font-awesome-4.7.0/scss/_variables.scss);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 100%;
+  width: 1;
+}
+
+img {
+  width: 100%;
+  display: block;
+  background-size: contain 100%;
+  max-width: 100%;
+}
+
+.header {
+  border: 1px solid green;
+  display: block;
+}
+
+.header__logo {
+  display: block;
+  background-image: url(../img/logotipe1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
+}
+
+.header__all-name {
+  position: relative;
+  width: 178px;
+  top: 0.3rem;
+  left: 1.8rem;
+  height: 64px;
+  z-index: 999;
+}
+
+.card {
+  height: 200px;
+  color: #000;
+  background-color: rgba(90, 205, 225, 0.282);
+  -webkit-clip-path: polygon(0px 0px, 100% 1px, 100% 56.5%, 0px 100%);
+          clip-path: polygon(0px 0px, 100% 1px, 100% 56.5%, 0px 100%);
+}
+
+.grid-conteiner {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid-conteiner__menu {
+  border: 1px solid red;
+}
+
+.logotime {
+  position: relative;
+  width: 178px;
+  top: 1.9rem;
+  left: 1.8rem;
+  height: 64px;
+  background-repeat: no-repeat;
+  z-index: 999;
+  background-image: url(../img/logo.png);
+}

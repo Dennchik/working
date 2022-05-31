@@ -1,0 +1,163 @@
+::-moz-selection {
+  background-color: #55595c;
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+}
+
+::selection {
+  background-color: #55595c;
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+}
+
+::-moz-selection {
+  background-color: #55595c;
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+}
+
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url("BebasNeue-webfont.eot");
+  src: local("?"), url("BebasNeue-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#wrap-search {
+  float: right;
+  width: 120px;
+  height: 100%;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+}
+
+#wrap-search.active {
+  width: 96%;
+}
+
+#search {
+  height: 34px;
+  margin: 3px 0.5em 0 3px;
+  padding: 3px;
+  border: 1px solid #212121;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 #272626;
+          box-shadow: inset 0 1px 0 #272626;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #010e20), color-stop(0.5, rgba(40, 218, 254, 0.229)), color-stop(0.5, rgba(0, 213, 255, 0.629)), color-stop(25.5, rgba(0, 0, 0, 0.434)));
+}
+
+.form-search {
+  width: 98%;
+  position: relative;
+  border: 1px solid #212121;
+  height: 100%;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: inset 0 1px 1px #575555, 0 1px 0 #212121ca;
+          box-shadow: inset 0 1px 1px #575555, 0 1px 0 #212121ca;
+  -moz-box-shadow: inset 0 1px 1px #575555, 0 1px 0 #212121ad;
+  -moz-transition: all 0.2s ease-out;
+}
+
+.form-search input {
+  width: 83%;
+  height: 22px;
+  border: none;
+  padding: 0 27px 0 6px;
+  font: 12px Helvetica, Arial, sans-serif;
+  color: #96b9d0;
+  text-shadow: 0 1px 0 #000;
+  background: none;
+}
+
+.form-search.close {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.685)), to(rgba(0, 0, 0, 0.625)));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.625));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.625));
+  background: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.625));
+}
+
+.form-search.expand {
+  width: 99%;
+  color: #96b9d0;
+  -webkit-box-shadow: inset 0 1px 1px #46575b, 0 1px 0 #212121;
+          box-shadow: inset 0 1px 1px #46575b, 0 1px 0 #212121;
+  background: -webkit-gradient(linear, right top, left top, from(#020f118a), to(#0013179f));
+  background: -webkit-linear-gradient(right, #020f118a, #0013179f);
+  background: -o-linear-gradient(right, #020f118a, #0013179f);
+  background: linear-gradient(-90deg, #020f118a, #0013179f);
+}
+
+.form-search.expand input {
+  color: #96b9d0;
+}
+
+#icn-search:hover,
+#icn-close:hover {
+  cursor: pointer;
+}
+
+.form-search.close #icn-search {
+  width: 7px;
+  height: 7px;
+  position: relative;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: 2px solid #fd00007b;
+  border-radius: 6px;
+}
+
+.form-search.close #icn1 {
+  width: 2px;
+  height: 6px;
+  background: #fd00007b;
+  position: absolute;
+  right: -1px;
+  top: 7px;
+  -webkit-transform: rotate(-25deg);
+      -ms-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.form-search.expand #icn-close {
+  position: relative;
+  position: absolute;
+  width: 2px;
+  height: 13px;
+  background: #fd00007b;
+  top: 6px;
+  right: 13px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.form-search.expand #icn2 {
+  position: absolute;
+  width: 2px;
+  height: 13px;
+  background: #fd00007b;
+  -webkit-transform: rotate(86deg);
+      -ms-transform: rotate(86deg);
+          transform: rotate(86deg);
+}
+
+.boxtuffs {
+  color: #807d98;
+  font: 12px Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.boxtuffs:hover {
+  color: #27896a;
+}
