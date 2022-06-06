@@ -1,27 +1,8 @@
-::selection {
-	background-color: #55595c;
-	color: #fff;
-	text-shadow: 0 1px 0 #000;
-}
-::-moz-selection {
-	background-color: #55595c;
-	color: #fff;
-	text-shadow: 0 1px 0 #000;
-}
-
-@font-face {
-	font-family: "BebasNeueRegular";
-	src: url("BebasNeue-webfont.eot");
-	src: local("?"), url("BebasNeue-webfont.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
-
 #wrap-search {
 	float: right;
 	width: 120px;
 	height: 100%;
-
+	margin-right: 4.3rem;
 	border-radius: 3px;
 	transition: all 0.2s ease-out;
 	-moz-transition: all 0.2s ease-out;
@@ -29,29 +10,28 @@
 
 #wrap-search.active {
 	width: 96%;
+	margin-right: 4.3rem;
+	width: 320px;
 }
 
 #search {
-	height: 34px;
-	margin: 3px 0.5em 0 3px;
 	padding: 3px;
 	border: 1px solid #212121;
 	border-radius: 3px;
 	-moz-box-shadow: inset 0 1px 0 #212121;
 	box-shadow: inset 0 1px 0 rgb(39, 38, 38);
-	background: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0, rgb(1, 14, 32)),
-		color-stop(0.5, rgba(40, 218, 254, 0.229)),
-		color-stop(0.5, rgba(0, 213, 255, 0.629)),
-		color-stop(25.5, rgba(0, 0, 0, 0.434))
-	);
+	background: -webkit-gradient(linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(1, 14, 32)),
+			color-stop(0.5, rgba(40, 218, 254, 0.229)),
+			color-stop(0.5, rgba(0, 213, 255, 0.629)),
+			color-stop(25.5, rgba(0, 0, 0, 0.434)));
+	border: 1px solid #ffffff;
 }
 
 .form-search {
-	width: 98%;
+	width: 100%;
 	position: relative;
 	border: 1px solid #212121;
 	height: 100%;
@@ -63,22 +43,19 @@
 	-moz-box-shadow: inset 0 1px 1px #575555, 0 1px 0 #212121ad;
 	-moz-transition: all 0.2s ease-out;
 }
-
 .form-search input {
 	width: 83%;
 	height: 22px;
-
 	border: none;
 	padding: 0 27px 0 6px;
 	font: 12px Helvetica, Arial, sans-serif;
 	color: #96b9d0;
 	text-shadow: 0 1px 0 #000;
-
 	background: none;
 }
 
 .form-search.close {
-	background: linear-gradient( rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.625));
+	background: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.625));
 }
 
 .form-search.expand {
@@ -91,10 +68,12 @@
 .form-search.expand input {
 	color: #96b9d0;
 }
+
 #icn-search:hover,
 #icn-close:hover {
 	cursor: pointer;
 }
+
 
 .form-search.close #icn-search {
 	width: 7px;
@@ -118,7 +97,6 @@
 }
 
 .form-search.expand #icn-close {
-	position: relative;
 	position: absolute;
 	width: 2px;
 	height: 13px;

@@ -3,7 +3,7 @@
 	--bg-color-13: #191919;
 	--bg-color-21: #212121;
 	--bg-color-1c: #1c2023;
-	--block-name:#0c97dc; //* Color name Block
+	--block-name: #0595af; //* Color name Block
 	--color-link: #01606b; //* Color link
 	--a-hover: #ff6532; //* Active link for hover
 	--bg-act-link: #0bd1e73f;
@@ -11,16 +11,18 @@
 	--color-gray: #4e4e4f;
 	--color-dot-25: #252525;
 	--color-orange: #ff6532;
-	--box-shw-l: 8px 0px 8px -4px #fff;
-	--box-shw-r: -8px 0px 8px -4px #fff;
-	--box-shw-s: 3px -3px 8px -4px rgba(255, 255, 255, 0.671);
-	--box-sht-d: 0px 10px 8px -4px rgba(13, 8, 8, 0.934);
+	--red-span: rgb(160, 35, 35);
+	--yellow-span: rgba(255, 255, 0, 0.66);
+	--box-shw-r: 5px 0px 5px -4px #fff;
+	--box-shw-l: -5px 0px 5px -4px #fff;
+	--box-shw-s: 3px -3px 5px -4px rgba(255, 255, 255, 0.671);
+	--box-sht-d: 0px 10px 5px -4px rgba(13, 8, 8, 0.934);
 	--box-shl-d: 10px 3px 8px -4px rgba(13, 8, 8, 0.934);
+	--box-shx-d: 0px -10px 5px -4px rgba(11, 11, 11, 0.934);
 	--box-shm-d: 0px 0px 18px -4px rgb(13, 8, 8);
 	--opacity: 0.7;
-	--font-l: 20px;
+	--font-l: 18px;
 	--font-m: 16px;
 	--font-s: 12px;
 	--lgrad-name-str: linear-gradient(to top, #00050c 30%, #13b5d1 50%, #00050c 80%);
 }
-

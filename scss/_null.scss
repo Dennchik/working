@@ -2,15 +2,17 @@
 // ? Обнуляющий код
 html {
 	width: 100%;
-	height: auto;
+	max-width: 100%;
 	font-size: 16px;
-	line-height: 1;
+	
+	line-height: 1.5;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	background-color: #212121;
+	background-size: contain;
 	background-image: linear-gradient(270deg, #212121 0%, #212121 100%);
 	-webkit-font-smoothing: antialiased;
-	border: 0px solid rgb(0, 17, 255);
+	border: 2px solid rgb(0, 17, 255);
 }
 
 body {
@@ -59,9 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: inherit;
 	font-weight: 400;
-	font-size: 16px;
 }
 
 a {
@@ -75,13 +75,8 @@ a:visited {
 	vertical-align: middle;
 }
 
-span {
-	color: #ff6532;
-	font-style: italic;
-}
 
-p {
-	margin: 0.5em 0;
-}
+
+
 
 // * {border: 0px solid green !important;}

@@ -1,0 +1,60 @@
+@media (max-width: 320px) {
+	.header {
+		&__logo {
+			display: none;
+
+		}
+
+		&__logo-name {
+			width: 100%;
+		}
+
+		&__search {
+			display: none;
+			width: 25%;
+		}
+	}
+
+	.sidenav {
+		display: none;
+	}
+
+	.grid-conteiner {
+		border: 0px solid rgb(0, 255, 8);
+		display: grid;
+		grid-template-areas:
+			"header header header"
+			"menu menu menu"
+			"search search search"
+			"sidenav content side-right"
+			"sidenav middle side-right"
+			"footer footer footer";
+		grid-template-columns: 0 1fr 25%;
+		grid-template-rows: 2.5rem 2.5rem 2.5rem 1fr 7.75rem 4.345rem;
+		height: auto;
+		min-height: 100vh;
+	}
+
+	.header-search {
+		display: block;
+		grid-area: search;
+		margin-top: 0.2rem;
+		z-index: 3;
+	}
+
+	#wrap-search{
+		float: right;
+		width: 19rem;
+		height: 100%;
+		margin-right: 0.5rem;
+		margin-left: 0.5rem;
+		border-radius: 3px;
+		transition: all 0.2s ease-out;
+		-moz-transition: all 0.2s ease-out;
+	}
+
+	#wrap-search.active {
+		margin-right: 0.5rem;
+		width: 19rem;
+	}
+}

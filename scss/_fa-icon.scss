@@ -18,6 +18,7 @@
 	height: 38px;
 	line-height: 38px;
 	float: left;
+	
 
 }
 
@@ -28,22 +29,44 @@
 	color: var(--a-hover);
 }
 
+.fa-link {
+	float: right;
+}
+
+.fa-share {
+	position: relative;
+	// display: none;
+	opacity: 0;
+	transition: 1s;
+	float: left;
+	top: 0;
+	bottom: 0;
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 30px;
+}
+
 .fa-globe {
 	color: var(--a-hover);
 }
 
 .fa-angle-double-left {
 	position: relative;
-	display: none;
-	top: 0;
-	bottom: 0;
-	margin: auto 0;
+	float: right;
+	display: block;
 	text-align: center;
 	width: 30px;
 	height: 30px;
-	line-height: 28px;
-	right: 0;
+	line-height: 2;
 	border-radius: 30px;
-	color: var(--a-hover);
 }
+
+.fa-angle-double-left:hover, .drop-btn:hover {
+	box-shadow: var(--box-shw-r);
+	z-index: 9;
+}
+
 
