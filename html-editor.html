@@ -18,51 +18,43 @@
 
 	<script defer type="text/javascript" src="js/jquery.min.js"></script>
 	<script defer type="text/javascript" src="js/side-bar.js"></script>
- <style>
+	<style>
+		.htmleditor_input,
+		.htmleditor_output {
+			border: 1px solid #c3c3c3;
+			width: 100%;
+			height: 450px;
+			background-color: #ffffff;
+			color: #000000;
+		}
 
-.htmleditor_input, .htmleditor_output 
-{ 
-border:1px solid #c3c3c3; 
-width:100%; 
-height:450px; 
-background-color:#ffffff; 
-color:#000000; 
-} 
- 
-#htmleditor 
-{ 
-  background-color: #f1fcff; 
-  height:500px; 
-  width:800px; 
-  border:solid #c3c3c3 1px; 
-} 
- 
-.htmleditor_headerText 
-{ 
-color:#005d68; 
-font-family:verdana; 
-font-size:90%; 
-top:8px; 
-padding-bottom: 7px; 
-} 
- 
-#htmleditor_source 
-{ 
-  padding-left: 7px; 
-  width:48%; 
-  float: left; 
-} 
- 
-#htmleditor_result 
-{ 
-  padding-right: 7px; 
-  width:48%; 
-  float: right; 
-}
+		#htmleditor {
+			background-color: #f1fcff;
+			height: 500px;
+			width: 800px;
+			border: solid #c3c3c3 1px;
+		}
 
+		.htmleditor_headerText {
+			color: #005d68;
+			font-family: verdana;
+			font-size: 90%;
+			top: 8px;
+			padding-bottom: 7px;
+		}
 
+		#htmleditor_source {
+			padding-left: 7px;
+			width: 48%;
+			float: left;
+		}
 
- </style>
+		#htmleditor_result {
+			padding-right: 7px;
+			width: 48%;
+			float: right;
+		}
+	</style>
 
 
 	<script>
@@ -243,7 +235,7 @@ padding-bottom: 7px;
 				</div>
 
 			</div>
-			<div class="sidenav__vertical-text">Side - Bar - Menu</div>
+			<div class="sidenav__vertical-text">Side--Bar--Menu</div>
 		</div>
 		<!--? Side Bar Menu - End -->
 
@@ -291,46 +283,46 @@ padding-bottom: 7px;
 		<div id="content" class="content">
 			<div class="block-wrap">
 
-<textarea class="htmleditor_input" id="mycode">
+				<textarea class="htmleditor_input" id="mycode">
 <!DOCTYPE html> 
  
 ВВЕДИТЕ (СКОПИРУЙТЕ) КОД В ЭТО ОКНО 
  
 </textarea>
-</div>
-
-<div id="htmleditor_result">
-	<input onclick="update();" type="button" value="Показать результат">
-
-
-	<iframe class="htmleditor_output" id="display"></iframe>
-</div>
-</div>
-
-
-
 			</div>
 
+			<div id="htmleditor_result">
+				<input onclick="update();" type="button" value="Показать результат">
 
-		</div>
 
-		<div class="side-right">
-			<div class="block-name">- A -</div>
-		</div>
-
-		<div id="middle" class="middle">
-			<div class="middle__wrapp">
-
+				<iframe class="htmleditor_output" id="display"></iframe>
 			</div>
 		</div>
 
-		<div id="footer" class="footer sticky-bottom">
 
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
+
+	</div>
+
+
+	</div>
+
+	<div class="side-right">
+		<div class="block-name">- A -</div>
+	</div>
+
+	<div id="middle" class="middle">
+		<div class="middle__wrapp">
+
 		</div>
+	</div>
+
+	<div id="footer" class="footer sticky-bottom">
+
+		<img src="" alt="">
+		<img src="" alt="">
+		<img src="" alt="">
+		<img src="" alt="">
+	</div>
 	</div>
 
 

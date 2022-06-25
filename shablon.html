@@ -13,9 +13,9 @@
 
 	<link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<script defer type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
 	<script defer type="text/javascript" src="js/jquery.min.js"></script>
 	<script defer type="text/javascript" src="js/side-bar.js"></script>
 
@@ -23,7 +23,7 @@
 
 <body>
 	<div class="grid-conteiner">
-		<div class="header">
+		<header class="header">
 			<div class="header__wrapper">
 				<div class="header__logo">
 					<div class="logotipe">
@@ -52,149 +52,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</header>
 
-		<!--? Side Bar Menu - Start -->
-		<div id="sideopen" class="sidenav">
-
-			<div id="link" class="sidenav__link">
-
-				<div class="dropp-btm">Menu
-					<span class="fa fa-share fa-flip-horizontal" aria-hidden="true"></span>
-				</div>
-				<ul class="drop-menu">
-					<div class="link-wrap">
-						<li><a href="">link - 1</a>
-							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-						</li>
-					</div>
-
-					<li><a href="">link - 1</a></li>
-					<li><a href="">link - 1</a></li>
-					<li><a href="">link - 1</a></li>
-					<li><a href="">link - 1</a></li>
-				</ul>
-
-				<button class="drop-btn">Css Справочник
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-
-					<div class="link-wrap">
-						<a href="css_reference.html">Css Элементы</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="selectors.html">Css Селекторы</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">Css Функции</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">Css Анимация</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-				</div>
-
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-				</div>
-
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-				</div>
-
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-				</div>
-
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-				</div>
-
-			</div>
-			<div class="sidenav__vertical-text">Side--Bar--Menu</div>
-		</div>
-		<!--? Side Bar Menu - End -->
-		
 		<!--? top menu - Start -->
 		<nav id="menu" class="menu">
 			<ul>
@@ -220,6 +79,104 @@
 		</nav>
 		<!--? top menu - End -->
 
+		<!--? Side Bar Menu - Start -->
+		<aside id="sideopen" class="sidebar">
+
+			<div id="sidebar-link" class="sidebar__link">
+
+
+				<div id="left-nav">
+					<ul class="nano-content">
+						<li class="left-menu">
+							<a href="index.html">
+								<i class="fa fa-globe" aria-hidden="true"></i>
+								Web design
+
+							</a>
+						</li>
+
+						<li class="left-menu">
+							<a href="javascript:void(0);">
+								<i class="fa fa-cogs"></i> UI Elements
+								<i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+							<ul>
+
+								<li><a href="ui-alerts-notifications.html">Alerts &amp; Notifications</a>
+								</li>
+								<li><a href="ui-panels.html">Panels</a>
+								</li>
+								<li><a href="ui-buttons.html">Buttons</a>
+								</li>
+								<li><a href="ui-slider-progress.html">Sliders &amp; Progress</a>
+								</li>
+								<li><a href="ui-modals-popups.html">Modals &amp; Popups</a>
+								</li>
+								<li><a href="ui-icons.html">Icons</a>
+								</li>
+								<li><a href="ui-grid.html">Grid</a>
+								</li>
+								<li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a>
+								</li>
+								<li><a href="ui-nestable-list.html">Nestable Lists</a>
+								</li>
+							</ul>
+
+
+
+						</li>
+
+						<li class="left-menu">
+							<a href="javascript:void(0);">
+								<i class="fa fa-table"></i> CSS Grid
+								<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+							</a>
+							<ul>
+								<li><a href="tables-basic.html">Grid Layout Module</a>
+								</li>
+
+								<li><a href="tables-data.html">Grid Container</a>
+								</li>
+								<li><a href="tables-data.html">Grid Item</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="left-menu">
+							<a href="javascript:void(0);">
+								<i class="fa fa fa-tasks"></i> Forms
+								<i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+							<ul>
+								<li><a href="forms-components.html">Components</a>
+								</li>
+								<li><a href="forms-validation.html">Validation</a>
+								</li>
+								<li><a href="forms-mask.html">Mask</a>
+								</li>
+								<li><a href="forms-wizard.html">Wizard</a>
+								</li>
+								<li><a href="forms-multiple-file.html">Multiple File Upload</a>
+								</li>
+								<li><a href="forms-wysiwyg.html">WYSIWYG Editor</a>
+								</li>
+							</ul>
+						</li>
+
+
+
+					</ul>
+
+
+
+				</div>
+
+
+
+
+			</div>
+			<div class="sidebar__vertical-text">Side - Bar - Menu</div>
+		</aside>
+		<!--? Side Bar Menu - End -->
+
 		<div class="header-search">
 			<div id="wrap-search">
 				<div id="search">
@@ -236,34 +193,77 @@
 			</div>
 		</div>
 
-		<div id="content" class="content">
-			<h1 class="block-name">CSS Селекторы</h1>
+		<article id="content" class="content">
+			<div class="block-name">- A -</div>
+			<div class="block-wrap">
+				<p>Селектор определяет, к какому элементу применять то или иное CSS-правило.</p>
+				<p>Обратите внимание - не существует селекторов, которые бы позволили выбрать родителя (содержащий
+					контейнер) или соседа родителя или потомков соседа родителя.</p>
+			</div>
 
-			<p>Селектор определяет, к какому элементу применять то или иное CSS-правило.</p>
-			<p>Обратите внимание - не существует селекторов, которые бы позволили выбрать родителя (содержащий
-				контейнер) или соседа родителя или потомков соседа родителя.</p>
 
 
+		</article>
 
-
-		</div>
-
+		<!-- ? Side right Start -->
 		<div class="side-right">
-			<div class="block-name-right">- A -</div>
+			<div class="block-name-right">
+				<button class="tablinks" onclick="openCity(event, 'fire')" id="defaultOpen">
+					<i class="fa fa-fire" aria-hidden="true"></i></button>
+
+				<button class="tablinks" onclick="openCity(event, 'rebel')" id="defaultOpen">
+					<i class="fa fa-rebel" aria-hidden="true"></i></button>
+
+				<button class="tablinks" onclick="openCity(event, 'css')" id="defaultOpen">
+					<i class="fa fa-css3" aria-hidden="true"></i></button>
+
+				<button class="tablinks" onclick="openCity(event, 'tags')" id="defaultOpen">
+					<i class="fa fa-tags" aria-hidden="true"></i></button>
+			</div>
+
+			<div id="fire" class="tabcontent">
+				<h1>Fire </h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis asperiores itaque dolore
+				<strong>obcaecati quidem totam dignissimos dolorum fuga cumque facere. </strong>Iure, dolorem minima dolor non minus ipsum
+				fugit numquam provident.
+			</div>
+			<div id="rebel" class="tabcontent">
+				<h1>Rebel</h1>
+			</div>
+			<div id="css" class="tabcontent">
+				<h1>CSS</h1>
+			</div>
+			<div id="tags" class="tabcontent">
+				<h1>Tags</h1>
+			</div>
+
 		</div>
+		<!-- ? Side right End -->
+
 		<div id="middle" class="middle">
 			<div class="middle__wrapp">
+				<div class="block-name-right">
+					<button class="tablinks" onclick="openCity(event, 'fire')" id="defaultOpen">
+						<i class="fa fa-fire" aria-hidden="true"></i></button>
 
+					<button class="tablinks" onclick="openCity(event, 'rebel')" id="defaultOpen">
+						<i class="fa fa-rebel" aria-hidden="true"></i></button>
+
+					<button class="tablinks" onclick="openCity(event, 'css')" id="defaultOpen">
+						<i class="fa fa-css3" aria-hidden="true"></i></button>
+
+					<button class="tablinks" onclick="openCity(event, 'tags')" id="defaultOpen">
+						<i class="fa fa-tags" aria-hidden="true"></i></button>
+				</div>
 			</div>
 		</div>
 
-		<div id="footer" class="footer sticky-bottom">
+		<footer id="footer" class="footer sticky-bottom">
 
 			<img src="" alt="">
 			<img src="" alt="">
 			<img src="" alt="">
 			<img src="" alt="">
-		</div>
+		</footer>
 	</div>
 
 

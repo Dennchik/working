@@ -1,4 +1,4 @@
-@media (max-width: 320px) {
+@media (max-width: 768px) {
 	.header {
 		&__logo {
 			display: none;
@@ -15,46 +15,64 @@
 		}
 	}
 
-	.sidenav {
+	.content {
+		margin-top: 0;
+	}
+
+
+	.sidebar {
 		display: none;
 	}
 
 	.grid-conteiner {
-		border: 0px solid rgb(0, 255, 8);
+		border: 1px solid green;
 		display: grid;
 		grid-template-areas:
-			"header header header"
-			"menu menu menu"
-			"search search search"
-			"sidenav content side-right"
-			"sidenav middle side-right"
-			"footer footer footer";
-		grid-template-columns: 0 1fr 25%;
-		grid-template-rows: 2.5rem 2.5rem 2.5rem 1fr 7.75rem 4.345rem;
+			"header header "
+			"menu menu"
+			"search search"
+			"sidebar content"
+			"sidebar middle"
+			"footer footer";
+		grid-template-columns: 0 1fr;
+		grid-template-rows: 2.5rem 2.5rem 0 1fr 7.75rem 4.345rem;
 		height: auto;
 		min-height: 100vh;
 	}
 
 	.header-search {
-		display: block;
 		grid-area: search;
-		margin-top: 0.2rem;
-		z-index: 3;
+		display: block;
+		position: sticky;
+		width: 100%;
+		top: 2.5rem;
+		margin-right: calc(8px + (64 - 8) * ((100vw - 320px) / (1600 - 320)));
+		z-index: 5;
 	}
 
-	#wrap-search{
+	#wrap-search {
+		position: sticky;
+		top: 2.5rem;
+		margin-right: 0;
 		float: right;
-		width: 19rem;
+		width: 13.7rem;
 		height: 100%;
-		margin-right: 0.5rem;
-		margin-left: 0.5rem;
+		white-space: nowrap;
+		line-height: 1;
+		// margin-left: calc(8px + (64 - 8) * ((100vw - 320px) / (1600 - 320)));
+		margin-right: calc(8px + (64 - 8) * ((100vw - 320px) / (1600 - 320)));
 		border-radius: 3px;
 		transition: all 0.2s ease-out;
 		-moz-transition: all 0.2s ease-out;
 	}
 
-	#wrap-search.active {
-		margin-right: 0.5rem;
-		width: 19rem;
+	.middle {
+		display: block;
+		margin-right: calc(8px + (64 - 8) * ((100vw - 320px) / (1600 - 320)));
 	}
+
+	.side-right {
+		display: none;
+	}
+
 }

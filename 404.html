@@ -9,12 +9,12 @@
 <meta name="description" content="Краткое описание документа.">
 <meta name="keywords" content="keywords-ключевые слова для поиска">
 <link rel="stylesheet" href="css/style.css" type="text/css">
-<script src="src/side-bar.js"></script>
+<script src="src/side-bar1.js"></script>
 </head>
 <body>
 <style>
 	[id^="raz"] {
-		padding: 3em 30%;
+		padding: 3em 40%;
 		background: green;
 	}
 
@@ -22,13 +22,43 @@
 		min-height: 4em;
 		background: blue;
 	}
+.dd {
+	display: inline-block;
+	width: 300px;
+	height: 250px;
+	background-color: blue;
+}
+.bb {
+	vertical-align: baseline;
+	width: 200px;
+	height: 150px;
+	background-color: rgb(0, 242, 255);
+}
+
+.tex {
+        font-size: 2rem;
+      }
+      .tex sub {
+        vertical-align: sub;
+        font-size: 1.8rem;
+      }
+      .tex sup {
+        vertical-align: 5px;
+        font-size: 1.6rem;
+      }
 </style>
 
 <div id="raz0">
 	<div></div>
 </div>
-
-
+<div class="dd">
+<p class="bb">Lorem ipsum dolor sit amet.</p>
 </div>
+
+<div class="tex">
+	T<sub>E</sub>X и L<sup>A</sup>T<sub>E</sub>X
+</div>
+
+
 </body>
 </html>

@@ -10,6 +10,7 @@
 	<meta content='width' name='MobileOptimized' />
 	<meta name="description" content="Краткое описание документа.">
 	<meta name="keywords" content="keywords-ключевые слова для поиска">
+	<meta name="theme-color" content="#01606b">
 
 	<link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,11 +23,8 @@
 </head>
 
 <body>
-
 	<div class="grid-conteiner">
-		<!-- ? grid Start -->
-		
-		<div class="header">
+		<header class="header">
 			<div class="header__wrapper">
 				<div class="header__logo">
 					<div class="logotipe">
@@ -55,149 +53,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		
-		<!--? Side Bar Menu - Start -->
-		<div id="sideopen" class="sidenav">
-		
-			<div id="link" class="sidenav__link">
-		
-				<div class="dropp-btm">Menu
-					<span class="fa fa-share fa-flip-horizontal" aria-hidden="true"></span>
-				</div>
-				<ul class="drop-menu">
-					<div class="link-wrap">
-						<li><a href="">link - 1</a>
-							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-						</li>
-					</div>
-		
-					<li><a href="">link - 1</a></li>
-					<li><a href="">link - 1</a></li>
-					<li><a href="">link - 1</a></li>
-					<li><a href="">link - 1</a></li>
-				</ul>
-		
-				<button class="drop-btn">Css Справочник
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-		
-					<div class="link-wrap">
-						<a href="css_reference.html">Css Элементы</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-					<div class="link-wrap">
-						<a href="selectors.html">Css Селекторы</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-					<div class="link-wrap">
-						<a href="">Css Функции</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-					<div class="link-wrap">
-						<a href="">Css Анимация</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-				</div>
-		
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-				</div>
-		
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-				</div>
-		
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-				</div>
-		
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-		
-				</div>
-		
-			</div>
-			<div class="sidenav__vertical-text">Side--Bar--Menu</div>
-		</div>
-		<!--? Side Bar Menu - End -->
-		
+		</header>
+
 		<!--? top menu - Start -->
 		<nav id="menu" class="menu">
 			<ul>
@@ -222,7 +79,178 @@
 			</ul>
 		</nav>
 		<!--? top menu - End -->
-		
+
+		<!--? Side Bar Menu - Start -->
+		<aside id="sideopen" class="sidebar">
+
+			<div id="sidebar-link" class="sidebar__link">
+
+				<div>
+					<div class="dropp-btm">Css Справочник
+						<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+					</div>
+					<ul class="dropp-menu">
+						<li class="link-wrapp"><a href="">Css Элементы</a>
+							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+						</li>
+						<li class="link-wrapp"><a href="">Css Селекторы</a>
+							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+						</li>
+						<li class="link-wrapp"><a href="">Css функции</a>
+							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+						</li>
+						<li class="link-wrapp"><a href="">Css анимация</a>
+							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+						</li>
+						<li class="link-wrapp"><a href="">link - 5</a>
+							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+						</li>
+					</ul>
+				</div>
+				
+				<div>
+					<div class="dropp-btm">Css Справочник
+						<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+					</div>
+					<ul class="dropp-menu">
+						<li class="link-wrapp"><a href="">Css Элементы</a>
+							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+						</li>
+						<li class="link-wrapp"><a href="">Css Селекторы</a>
+							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+						</li>
+						<li class="link-wrapp"><a href="">Css функции</a>
+							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+						</li>
+						<li class="link-wrapp"><a href="">Css анимация</a>
+							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+						</li>
+						<li class="link-wrapp"><a href="">link - 5</a>
+							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+						</li>
+					</ul>
+				</div>
+
+				<button class="drop-btn">Css Справочник
+					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+				</button>
+				<div class="sidebar__drop-container">
+
+					<div class="link-wrap">
+						<a href="css_reference.html">Css Элементы</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+					<div class="link-wrap">
+						<a href="selectors.html">Css Селекторы</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+					<div class="link-wrap">
+						<a href="">Css функции</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+					<div class="link-wrap">
+						<a href="">Css анимация</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+				</div>
+
+				<button class="drop-btn">Projects
+					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+				</button>
+				<div class="sidebar__drop-container">
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+				</div>
+
+				<button class="drop-btn">Projects
+					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+				</button>
+				<div class="sidebar__drop-container">
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+				</div>
+
+				<button class="drop-btn">Projects
+					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+				</button>
+				<div class="sidebar__drop-container">
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+				</div>
+
+				<button class="drop-btn">Projects
+					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+				</button>
+				<div class="sidebar__drop-container">
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+					<div class="link-wrap">
+						<a href="">link - 1</a>
+						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="sidebar__vertical-text">Side - Bar - Menu</div>
+		</aside>
+		<!--? Side Bar Menu - End -->
+
 		<div class="header-search">
 			<div id="wrap-search">
 				<div id="search">
@@ -239,12 +267,9 @@
 			</div>
 		</div>
 
-		<!-- ? Content Block - Start -->
-		<div id="content" class="content">
+		<article id="content" class="content">
 			<div class="block-wrap">
-
-				<h1 class="block-name">CSS Селекторы</h1>
-
+				<div class="block-name">CSS Селекторы</div>
 				<p>Селектор определяет, к какому элементу применять то или иное CSS-правило.</p>
 				<p>Обратите внимание - не существует селекторов, которые бы позволили выбрать родителя (содержащий
 					контейнер) или соседа родителя или потомков соседа родителя.</p>
@@ -254,7 +279,6 @@
 						<div class="table-head__examples">Примеры</div>
 						<div class="table-head__descript">Описание</div>
 					</div>
-
 					<h1>Базовые Селекторы</h1>
 					<h2>Универсальный селектор</h2>
 					<div class="grid-col-3">
@@ -272,38 +296,43 @@
 						</span>
 					</div>
 					<div class="table__content">
-						Универсальный селектор.Глобально задает стили, будет соответствовать всем элементам на странице.
+						<p>Универсальный селектор. Глобально задает стили, будет соответствовать всем элементам на странице.
+						</p>
 					</div>
 
 					<h2>Селекторы по типу элемента</h2>
 					<div class="grid-col-3">
 						<p>Этот базовый селектор выбирает тип элементов, к которым будет применяться правило. <br>
 							Синтаксис: <span>элемент</span> <br>
-							Пример: селектор div выберет все элементы<span class="red">&lt;div&gt;</span>.</p>
+							Пример: селектор div выберет все элементы
+							<span>&lt;div&gt;</span>.
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">element</a></div>
 					<div class="table__example"><span>div {...}</span></div>
 					<div class="table__content">
-						Для всех элементов <span class="red"> &lt; div &gt;</span>
+						<p>
+							Для всех элементов <span> &lt; div &gt;</span>
+						</p>
 					</div>
 					<div class="table__link"><a href="">element</a></div>
 					<div class="table__example"><span>p {...}</span></div>
 					<div class="table__content">
-						Для всех элементов <span class="red"> &lt;p&gt;</span>
+						<p>Для всех элементов <span> &lt;p&gt;</span></p>
 					</div>
 
 					<h2>Селекторы по классу</h2>
 					<div class="grid-col-3">
 						<p>Этот базовый селектор выбирает тип элементов, к которым будет применяться правило.
 							Синтаксис: <span>.имяКласса</span>
-							Пример: селектор <span>.wrapper</span> выберет все элементы с соответствующим классом (который был
-							определён в атрибуте <span>class="wrapper"</span>).</p>
+							Пример: селектор <span>.wrap</span> выберет все элементы с соответствующим классом (который был
+							определён в атрибуте <span>class="wrap"</span>).</p>
 					</div>
-					<div class="table__link"><a href="">.class="wrapper"</a></div>
-					<div class="table__example">.<span class="yellow">wrapper {...}</span></div>
+					<div class="table__link"><a href="">.class="..."</a></div>
+					<div class="table__example">.<span>wrap {...}</span></div>
 					<div class="table__content">
-						Элемент с классом <span>"name"</span>
+						<p>Элемент с классом <span>"wrap"</span></p>
 					</div>
 
 					<h2>Селекторы по идентификатору</h2>
@@ -312,15 +341,15 @@
 							забывайте, что идентификатор должен быть уникальным, т. е. использоваться только для одного
 							элемента в HTML-документе. <br>
 							Синтаксис: <span>#имяИдентификатора</span><br>
-							Пример: селектор #<span class="yellow">name</span> выберет элемент с идентификатором
+							Пример: селектор #<span>name</span> выберет элемент с идентификатором
 							<span>name</span> (который
 							был определён в атрибуте <span>id="name"</span>).
 						</p>
 					</div>
-					<div class="table__link"><a href="">#id="name"</a></div>
-					<div class="table__example">#<span class="yellow">name {...}</span></div>
+					<div class="table__link"><a href="">#id=".."</a></div>
+					<div class="table__example"><span>#name {...}</span></div>
 					<div class="table__content">
-						Селекторы по типу элементаan>"name"</span>
+						<p>Селекторы по типу элементаan>"name"</span></p>
 					</div>
 
 					<h2>Селекторы по атрибуту</h2>
@@ -342,79 +371,95 @@
 					<div class="table__link"><a href="">[атрибут]</a></div>
 					<div class="table__example"><span>[target]</span></div>
 					<div class="table__content">
-						Все элементы с атрибутом <span>target</span>
+						<p>Все элементы с атрибутом <span>target</span></p>
 					</div>
 
-					<div class="table__link"><a href="">[атрибут=значение]</a></div>
-					<div class="table__example"><span>[target=_blank]</span></div>
+					<div class="table__link"><a href="">[атрибут = значение]</a></div>
+					<div class="table__example"><span>[target = _blank]</span></div>
 					<div class="table__content">
-						Все элементы с target=<span>"_blank"</span>
+						<p>Все элементы с target=<span>"_blank"</span></p>
 					</div>
 
-					<div class="table__link"><a href="">[атрибут~=значение]</a></div>
+					<div class="table__link"><a href="">[атрибут ~ значение]</a></div>
 					<div class="table__example"><span>[title~=flower]</span></div>
 					<div class="table__content">
-						Все элементы с атрибутом title, содержащие слово <span>"flower"</span>
+						<p>
+							Все элементы с атрибутом title, содержащие слово <span>"flower"</span>
+						</p>
 					</div>
 
-					<div class="table__link"><a href="">[атрибут|=значение]</a></div>
+					<div class="table__link"><a href="">[атрибут| = значение]</a></div>
 					<div class="table__example"><span>[lang|=en]</span></div>
 					<div class="table__content">
-						Все элементы со значением атрибута <span>lang</span>, начиная с <span>"en"</span>
-					</div>
-
-					<div class="table__link"><a href="">[атрибут^=значение]</a></div>
-					<div class="table__example"><span>a[href^="https"]</span></div>
-					<div class="table__content">
-						Выбирает каждый элемент <span class="red">&lt;a&gt;</span>, значение атрибута <span>href</span>
-						который
-						начинается с <span>"https"</span>
+						<p>
+							Все элементы со значением атрибута <span>lang</span>, начиная с <span>"en"</span>
+						</p>
 					</div>
 
 					<div class="table__link">
-						<a href="">[attribute$=значение]</a>
+						<a href="">[атрибут^ = значение]</a>
 					</div>
-					<div class="table__example"><span>a[href$=".pdf"]</span></div>
+					<div class="table__example"><span>a[href^ = "https"]</span></div>
 					<div class="table__content">
-						Выбирает каждый элемент <span class="red">&lt;a&gt;</span>, значение атрибута <span>href</span>
-						который заканчивается на ".pdf"
+						<p>
+							Выбирает каждый элемент <span>&lt;a&gt;</span>, значение атрибута <span>href</span>
+							который начинается с <span>"https"</span>
+						</p>
+					</div>
+					<div class="table__link">
+						<a href="">[attribute$ = значение]</a>
+					</div>
+					<div class="table__example"><span>a[href$ = ".pdf"]</span></div>
+					<div class="table__content">
+						<p>
+							Выбирает каждый элемент <span>&lt;a&gt;</span>, значение атрибута <span>href</span> который
+							заканчивается на ".pdf"
+						</p>
 					</div>
 
-					<div class="table__link"><a href="">[атрибут*=значение]</a></div>
-					<div class="table__example"><span>a[href*="schoolsw3"]</span></div>
-					<div class="table__content">
-						Выбирает каждый элемент <span class="red">&lt;a&gt;</span>, значение атрибута href которого содержит
-						подстроку "schoolsw3"
+					<div class="table__link"><a href="">[атрибут* = значение]</a></div>
+					<div class="table__example">
+						<span>a[href* = "schoolsw3"]</span>
 					</div>
+					<div class="table__content">
+						<p>
+							Выбирает каждый элемент <span>&lt;a&gt;</span>, значение атрибута href которого содержит подстроку
+							"schoolsw3"
+						</p>
+					</div>
+
 					<h1>Комбинаторы</h1>
 					<h2>Комбинатор запятая</h2>
 					<div class="grid-col-3">
-						<p>Комбинатор , это способ группировки, он выбирает все совпадающие узлы. <br>
+						<p>
+							Комбинатор , это способ группировки, он выбирает все совпадающие узлы. <br>
 							Синтаксис: A, B <br>
 							Пример: <span>div, span</span> выберет оба элемента - и
 							<span>&lt;div&gt;</span> и <span>&lt;span&gt;.</span>
 						</p>
 					</div>
-					<div class="table__link"><a href="">element,element</a></div>
+					<div class="table__link"><a href="">element, element</a></div>
 					<div class="table__example"><span>div, span {...}</span></div>
 					<div class="table__content">
-						Для всех элементов <span class="red">&lt;div&gt;</span> и всех элементов
-						<span>class="red">&lt;span&gt;</span>
+						<p>
+							Для всех элементов <span>&lt;div&gt;</span> и всех элементов <span>&lt;span&gt;</span>
+						</p>
 					</div>
 
 					<h2>Комбинатор потомков</h2>
 					<div class="grid-col-3">
 						<p>Комбинатор ' ' (пробел) выбирает элементы, которые находятся внутри указанного элемента (вне
-							зависимости от уровня вложенности). <br>
+							зависимости от уровня вложенности).<br>
 							Синтаксис: <span>A B</span><br>
-							Пример: селектор <span>div span</span> выберет все элементы <span class="red">&lt;span&gt;</span>,
-							которые находятся внутри элемента <span class="red">&lt;div&gt;</span>.</p>
+							Пример: селектор <span>div span</span> выберет все элементы <span>&lt;span&gt;</span>,
+							которые находятся внутри элемента <span>&lt;div&gt;</span>.</p>
 					</div>
 					<div class="table__link"><a href="">element element</a></div>
 					<div class="table__example"><span>div span {...}</span></div>
 					<div class="table__content">
-						Для всех элементов <span class="red">&lt;span&gt;</span> внутри элементов <span
-							class="red">&lt;div&gt;</span>
+						<p>
+							Для всех элементов <span>&lt;span&gt;</span> внутри элементов <span>&lt;div&gt;</span>
+						</p>
 					</div>
 
 					<h2>Дочерние селекторы</h2>
@@ -423,18 +468,19 @@
 							Комбинатор <span>'>'</span> в отличие от пробела выбирает только те элементы, которые являются
 							дочерними непосредственно по отношению к указанному элементу.<br>
 							Синтаксис: <span>A > B</span>
-							Пример: селектор <span>ul > li</span> выберет только дочерние элементы <span
-								class="red">&lt;li&gt;</span>,
-							которые находятся внутри, на первом уровне вложенности по отношению к элементу <span
-								class="red">&lt;ul&gt;</span>.
+							Пример: селектор <span>ul > li</span> выберет только дочерние элементы <span>&lt;li&gt;</span>,
+							которые находятся внутри, на первом уровне вложенности по отношению к элементу
+							<span>&lt;ul&gt;</span>.
 						</p>
 					</div>
 
-					<div class="table__link"><a href="">element>element</a></div>
-					<div class="table__example"><i>div > p {..}</i></div>
+					<div class="table__link"><a href="">element > element</a></div>
+					<div class="table__example"><span>div > p {..}</span></div>
 					<div class="table__content">
-						Для всех элементов <span class="red">&lt;p&gt;</span>, родителем которых является элемент
-						<span class="red">&lt;div&gt;</span>
+						<p>
+							Для всех элементов <span>&lt;p&gt;</span>, родителем которых является элемент
+							<span>&lt;div&gt;</span>
+						</p>
 					</div>
 
 					<h2>Комбинатор всех соседних элементов</h2>
@@ -444,16 +490,19 @@
 							элемента, с тем же
 							родителем. <br>
 							Синтаксис: <span>A ~ B</span>
-							Пример: <span>p ~ span</span> выберет все элементы <span class="red">&lt;span&gt;</span>, которые
-							находятся
-							после элемента <span class="red">&lt;p&gt</span>; внутри одного родителя.
+							Пример: <span>p ~ span</span> выберет все элементы
+							<span>&lt;span&gt;</span>, которые
+							находятся после элемента <span>&lt;p&gt</span>; внутри одного родителя.
 						</p>
 					</div>
-					<div class="table__link"><a href="">element~element</a></div>
-					<div class="table__example"><i>div~p</i></div>
+					<div class="table__link"><a href="">element ~ element</a></div>
+					<div class="table__example"><span>div~p</span></div>
 					<div class="table__content">
-						Для всех (каждого элемента) элементов <span class="red">&lt;p&gt;</span> расположенных после элементов
-						<span class="red">&lt;div&gt;</span>
+						<p>
+							Для всех (каждого элемента) элементов
+							<span>&lt;p&gt;</span> расположенных после элементов
+							<span>&lt;div&gt;</span>
+						</p>
 					</div>
 
 					<h2>Комбинатор следующего соседнего элемента</h2>
@@ -461,14 +510,19 @@
 						<p>Комбинатор <span>'+'</span> выбирает элемент, который находится непосредственно после указанного
 							элемента, если у них общий родитель. <br>
 							Синтаксис: <span>A + B</span><br>
-							Пример: селектор ul + li выберет любой <span class="red">&lt;li&gt</span>; элемент, который
-							находится непосредственно после элемента <span class="red">&lt;ul&gt;</span>.</p>
+							Пример: селектор ul + li выберет любой
+							<span>&lt;li&gt</span>; элемент, который
+							находится непосредственно после элемента
+							<span>&lt;ul&gt;</span>.
+						</p>
 					</div>
-					<div class="table__link"><a href="">element+element</a></div>
-					<div class="table__example"><i>div+p {...}</i></div>
+					<div class="table__link"><a href="">element + element</a></div>
+					<div class="table__example"><span>div+p {...}</span></div>
 					<div class="table__content">
-						Для элемента <span class="red">&lt;p&gt;</span> который размещается первым после элементов
-						<span class="red">&lt;div&gt;</span>
+						<p>
+							Для элемента <span>&lt;p&gt;</span> который размещается первым после элементов
+							<span>&lt;div&gt;</span>
+						</p>
 					</div>
 
 					<h1>Псевдо</h1>
@@ -476,7 +530,7 @@
 					<div class="grid-col-3">
 						<p>Знак <span> : </span>позволяет выбрать элементы, основываясь на информации, которой нет в дереве
 							элементов.<br>
-							Пример: <span>a:visited</span> соответствует всем элементам <span class="red">&lt;a&gt;</span>
+							Пример: <span>a:visited</span> соответствует всем элементам <span>&lt;a&gt;</span>
 							которые имеют статус "посещённые".<br>
 							Ещё пример: <span>div:hover</span> соответствует элементу, над которым проходит указатель мыши.<br>
 							Ещё пример: <span>input:focus</span> соответствует полю ввода, которое получило фокус.</p>
@@ -484,111 +538,130 @@
 
 					<div class="table__link"><a href="">:active</a></div>
 					<div class="table__example">a:active</div>
-					<div class="table__content">Выбор активной ссылки</div>
+					<div class="table__content">
+						<p>Выбор активной ссылки</p>
+					</div>
 
 					<div class="table__link"><a href="">:checked</a></div>
 					<div class="table__example">input:checked</div>
 					<div class="table__content">
-						Выбирает каждый проверенный элемент <span>&lt;input&gt;</span>
+						<p>Выбирает каждый проверенный элемент
+							<span>&lt;input&gt;</span>
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:disabled</a></div>
 					<div class="table__example">input:disabled</div>
 					<div class="table__content">
-						Выбрать каждый отключенный элемент <span>&lt;input&gt;</span>
+						<p>Выбрать каждый отключенный элемент <span>&lt;input&gt;</span></p>
 					</div>
 
 					<div class="table__link"><a href="">:empty</a></div>
 					<div class="table__example">p:empty</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span>, у которого нет дочерних элементов (включая текстовые
-						узлы)
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span>, у которого нет дочерних элементов (включая
+							текстовые узлы)
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:enabled</a></div>
 					<div class="table__example">input:enabled</div>
 					<div class="table__content">
-						Выбирает каждый включенный элемент <span>&lt;input&gt;</span>
+						<p>Выбирает каждый включенный элемент
+							<span>&lt;input&gt;</span>
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:first-child</a></div>
 					<div class="table__example">p:first-child</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span>, который является первым дочерним элементом
-						родительского элемента
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span>, который является первым дочерним элементом
+							родительского элемента
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:focus</a></div>
 					<div class="table__example">input:focus</div>
 					<div class="table__content">
-						Выбирает элемент ввода, имеющего фокус
+						<p>Выбирает элемент ввода, имеющего фокус</p>
 					</div>
 
 					<div class="table__link"><a href="">:hover</a></div>
 					<div class="table__example">a:hover</div>
 					<div class="table__content">
-						Выделяет ссылки при наведении курсора мыши
+						<p>Выделяет ссылки при наведении курсора мыши</p>
 					</div>
 
 					<div class="table__link"><a href="">:in-range</a></div>
 					<div class="table__example">input:in-range</div>
 					<div class="table__content">
-						Выделяет входные элементы со значением в заданном диапазоне
+						<p>Выделяет входные элементы со значением в заданном диапазоне</p>
 					</div>
 
 					<div class="table__link"><a href="">:invalid</a></div>
 					<div class="table__example">input:invalid</div>
 					<div class="table__content">
-						Выбирает все входные элементы с недопустимым значением
+						<p>Выбирает все входные элементы с недопустимым значением</p>
 					</div>
 
 					<div class="table__link"><a href="">:lang(language)</a></div>
 					<div class="table__example">p:lang(it)</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span> с атрибутом lang, равным <span>"it"</span>
-						(итальянский)
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span> с атрибутом lang, равным <span>"it"</span>
+							(итальянский)
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:last-child</a></div>
 					<div class="table__example">p:last-child</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span>, который является последним дочерним элементом
-						родительского элемента
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span>, который является последним дочерним элементом
+							родительского элемента
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:last-of-type</a></div>
 					<div class="table__example">p:last-of-type</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span>, который является последним элементом
-						<span>&lt;p&gt;</span> своего
-						родителя
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span>, который является последним элементом
+							<span>&lt;p&gt;</span> своего родителя
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:link</a></div>
 					<div class="table__example">a:link</div>
 					<div class="table__content">
-						Выделяет все непосещенные ссылки
+						<p>Выделяет все непосещенные ссылки</p>
 					</div>
 
 					<div class="table__link"><a href="">:not(selector)</a></div>
 					<div class="table__example">:not(p)</div>
 					<div class="table__content">
-						Выбирает каждый элемент, который не является элементом <span>&lt;p&gt;</span>
+						<p>Выбирает каждый элемент, который не является элементом <span>&lt;p&gt;</span></p>
 					</div>
 
 					<div class="table__link"><a href="">:nth-child(n)</a></div>
 					<div class="table__example">p:nth-child(2)</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span>, который является вторым дочерним элементом
-						родительского элемента
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span>, который является вторым дочерним элементом
+							родительского элемента
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:nth-last-child(n)</a></div>
 					<div class="table__example">p:nth-last-child(2)</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span>, который является вторым дочерним элементом
-						родительского элемента,
-						считая от последнего дочернего элемента
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span>, который является вторым дочерним элементом
+							родительского элемента,
+							считая от последнего дочернего элемента
+						</p>
 					</div>
 
 					<div class="table__link">
@@ -596,86 +669,95 @@
 					</div>
 					<div class="table__example">p:nth-last-of-type(2)</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span>, который является вторым элементом
-						<p> своего родителя, считая от последнего потомка
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span>, который является вторым элементом
+							<span>&lt;p&gt;</span> своего родителя, считая от последнего потомка
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:nth-of-type(n)</a></div>
 					<div class="table__example">p:nth-of-type(2)</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span>, который является вторым элементом
-						<span>&lt;p&gt;</span> своего
-						родителя
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span>, который является вторым элементом
+							<span>&lt;p&gt;</span> своего родителя
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:only-of-type</a></div>
 					<div class="table__example">p:only-of-type</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span>, который является единственным элементом
-						<span>&lt;p&gt;</span>
-						родительского элемента
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span>, который является единственным элементом
+							<span>&lt;p&gt;</span>
+							родительского элемента
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:only-child</a></div>
 					<div class="table__example">p:only-child</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span>, который является единственным дочерним элементом
-						родительского
-						элемента
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span>, который является единственным дочерним элементом
+							родительского
+							элемента
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:optional</a></div>
 					<div class="table__example">input:optional</div>
 					<div class="table__content">
-						Выбирает элементы ввода без атрибута <span>"required"</span>
+						<p>Выбирает элементы ввода без атрибута
+							<span>"required"</span>
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:out-of-range</a></div>
 					<div class="table__example">input:out-of-range</div>
 					<div class="table__content">
-						Выбирает входные элементы со значением вне указанного диапазона
+						<p>Выбирает входные элементы со значением вне указанного диапазона</p>
 					</div>
 
 					<div class="table__link"><a href="">:read-only</a></div>
 					<div class="table__example">input:read-only</div>
 					<div class="table__content">
-						Выбирает входные элементы с указанным атрибутом <span>"readonly"</span>
+						<p>Выбирает входные элементы с указанным атрибутом <span>"readonly"</span></p>
 					</div>
 
 					<div class="table__link"><a href="">:read-write</a></div>
 					<div class="table__example">input:read-write</div>
 					<div class="table__content">
-						Выбирает входные элементы с не указанным атрибутом <span>"readonly"</span>
+						<p>Выбирает входные элементы с не указанным атрибутом <span>"readonly"</span></p>
 					</div>
 
 					<div class="table__link"><a href="">:required</a></div>
 					<div class="table__example">input:required</div>
 					<div class="table__content">
-						Выбирает входные элементы с указанным атрибутом <span>"required"</span>
+						<p>Выбирает входные элементы с указанным атрибутом <span>"required"</span></p>
 					</div>
 
 					<div class="table__link"><a href="">:root</a></div>
 					<div class="table__example">:root</div>
 					<div class="table__content">
-						Выбирает корневой элемент документа
+						<p>Выбирает корневой элемент документа</p>
 					</div>
 
 					<div class="table__link"><a href="">:target</a></div>
 					<div class="table__example">#news:target</div>
 					<div class="table__content">
-						Выбирает текущий активный элемент #news (при щелчке по URL, содержащему имя привязки)
+						<p>Выбирает текущий активный элемент #news (при щелчке по URL, содержащему имя привязки)</p>
 					</div>
 
 					<div class="table__link"><a href="">:valid</a></div>
 					<div class="table__example">input:valid</div>
 					<div class="table__content">
-						Выбирает все входные элементы с допустимым значением
+						<p>Выбирает все входные элементы с допустимым значением</p>
 					</div>
 
 					<div class="table__link"><a href="">visited</a></div>
 					<div class="table__example">a:visited</div>
 					<div class="table__content">
-						Выбирает все посещенные ссылки
+						<p>Выбирает все посещенные ссылки</p>
 					</div>
 
 					<h2>Псевдоэлементы</h2>
@@ -687,76 +769,124 @@
 					<div class="table__link"><a href="">::after</a></div>
 					<div class="table__example">p::after</div>
 					<div class="table__content">
-						Вставляет что-нибудь после содержимого каждого элемента <span>&lt;p&gt;</span>
+						<p>Вставляет что-нибудь после содержимого каждого элемента <span>&lt;p&gt;</span></p>
 					</div>
 
 					<div class="table__link"><a href="">::before</a></div>
 					<div class="table__example">p::before</div>
 					<div class="table__content">
-						Вставить что-то перед содержимым каждого элемента
-						<span>&lt;p&gt;</span>
+						<p>Вставить что-то перед содержимым каждого элемента
+							<span>&lt;p&gt;</span>
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">::first-line</a></div>
 					<div class="table__example">p::first-line</div>
 					<div class="table__content">
-						Выбирает первую строку каждого элемента <span>&lt;p&gt;</span>
+						<p>Выбирает первую строку каждого элемента
+							<span>&lt;p&gt;</span>
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">::first-letter</a></div>
 					<div class="table__example">p::first-letter</div>
 					<div class="table__content">
-						Выбирает первую букву каждого элемента <span>&lt;p&gt;</span>
+						<p>
+							Выбирает первую букву каждого элемента
+							<span>&lt;p&gt;</span>
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">:first-of-type</a></div>
 					<div class="table__example">p:first-of-type</div>
 					<div class="table__content">
-						Выбирает каждый элемент <span>&lt;p&gt;</span>, который является первым элементом
-						<span>&lt;p&gt;</span> своего родителя
+						<p>
+							Выбирает каждый элемент <span>&lt;p&gt;</span>, который является первым элементом
+							<span>&lt;p&gt;</span> своего родителя
+						</p>
 					</div>
 
 					<div class="table__link"><a href="">::selection</a></div>
 					<div class="table__example">::selection</div>
 					<div class="table__content">
-						Выделяет часть элемента, выбранную пользователем
+						<p>Выделяет часть элемента, выбранную пользователем</p>
 					</div>
+
+
 
 				</div>
 
+
+
+
+
+
+			</div>
+		</article>
+
+		<!-- ? Side right Start -->
+		<div class="side-right">
+			<div class="block-name-right">
+				<button class="tablinks" onclick="openCity(event, 'fire')" id="defaultOpen">
+					<i class="fa fa-fire" aria-hidden="true"></i></button>
+
+				<button class="tablinks" onclick="openCity(event, 'rebel')" id="defaultOpen">
+					<i class="fa fa-rebel" aria-hidden="true"></i></button>
+
+				<button class="tablinks" onclick="openCity(event, 'css')" id="defaultOpen">
+					<i class="fa fa-css3" aria-hidden="true"></i></button>
+
+				<button class="tablinks" onclick="openCity(event, 'tags')" id="defaultOpen">
+					<i class="fa fa-tags" aria-hidden="true"></i></button>
+			</div>
+
+			<div id="fire" class="tabcontent">
+				<h1>Fire </h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis asperiores itaque dolore
+				obcaecati quidem totam dignissimos dolorum fuga cumque facere. Iure, dolorem minima dolor non minus ipsum
+				fugit numquam provident.
+			</div>
+			<div id="rebel" class="tabcontent">
+				<h1>Rebel</h1>
+			</div>
+			<div id="css" class="tabcontent">
+				<h1>CSS</h1>
+			</div>
+			<div id="tags" class="tabcontent">
+				<h1>Tags</h1>
 			</div>
 
 		</div>
-		<!-- ? Content Block - End -->
-
-		<div class="side-right">
-			<div class="block-name-right">- A -</div>
-
-
-		</div>
+		<!-- ? Side right End -->
 
 		<div id="middle" class="middle">
 			<div class="middle__wrapp">
+				<div class="block-name-right">
+					<button class="tablinks" onclick="openCity(event, 'fire')" id="defaultOpen">
+						<i class="fa fa-fire" aria-hidden="true"></i></button>
 
+					<button class="tablinks" onclick="openCity(event, 'rebel')" id="defaultOpen">
+						<i class="fa fa-rebel" aria-hidden="true"></i></button>
+
+					<button class="tablinks" onclick="openCity(event, 'css')" id="defaultOpen">
+						<i class="fa fa-css3" aria-hidden="true"></i></button>
+
+					<button class="tablinks" onclick="openCity(event, 'tags')" id="defaultOpen">
+						<i class="fa fa-tags" aria-hidden="true"></i></button>
+				</div>
 			</div>
 		</div>
 
-
-
-		<div id="footer" class="footer sticky-bottom">
+		<footer id="footer" class="footer sticky-bottom">
 
 			<img src="" alt="">
 			<img src="" alt="">
 			<img src="" alt="">
 			<img src="" alt="">
-		</div>
-
-
-
-		<!-- ? grid End -->
+		</footer>
 	</div>
 
-	<div class="bg-grid1"></div>
+
+
 
 
 

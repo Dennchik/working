@@ -13,236 +13,136 @@
 
 	<link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<script defer type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="css/help.css" type="text/css">
 
+	<script defer type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script defer type="text/javascript" src="js/jquery.min.js"></script>
-	<script defer type="text/javascript" src="js/side-bar.js"></script>
+	<script defer type="text/javascript" src="js/n.js"></script>
+	<!-- <script defer type="text/javascript" src="js/side-bar.js"></script> -->
+
+
 
 </head>
 
 <body>
-	<div class="grid-conteiner">
-		<div class="header">
-			<div class="header__wrapper">
-				<div class="header__logo">
-					<div class="logotipe">
-						<div class="logo"></div>
-					</div>
-				</div>
-				<div class="header__logo-name">
-					<h1 class="hgrad">
-						<i class="fa fa-globe fa-lg" aria-hidden="true"></i>
-						CSS Справочник: примеры и элементы
-					</h1>
-				</div>
-				<div class="header__serch">
-					<div id="wrap-search">
-						<div id="search">
-							<form class="form-search close">
-								<div id="icn-search">
-									<div id="icn1"></div>
-								</div>
-								<div id="icn-close">
-									<div id="icn2"></div>
-								</div>
-								<input type="text" name="search" value="Search" />
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<!--? Side Bar Menu - Start -->
-		<div id="sideopen" class="sidenav">
+<aside class="sidebar">
+	<div id="leftside-navigation" class="nano">
+		<ul class="nano-content">
+			<li class="sub-menu active">
+				<a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+			</li>
+			<li class="sub-menu">
+				<a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>UI Elements</span><i
+						class="arrow fa fa-angle-right pull-right"></i></a>
+				<ul>
 
-			<div id="link" class="sidenav__link">
-
-				<div class="dropp-btm">Menu
-					<span class="fa fa-share fa-flip-horizontal" aria-hidden="true"></span>
-				</div>
-				<ul class="drop-menu">
-					<div class="link-wrap">
-						<li><a href="">link - 1</a>
-							<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-						</li>
-					</div>
-
-					<li><a href="">link - 1</a></li>
-					<li><a href="">link - 1</a></li>
-					<li><a href="">link - 1</a></li>
-					<li><a href="">link - 1</a></li>
+					<li><a href="ui-alerts-notifications.html">Alerts &amp; Notifications</a>
+					</li>
+					<li><a href="ui-panels.html">Panels</a>
+					</li>
+					<li><a href="ui-buttons.html">Buttons</a>
+					</li>
+					<li><a href="ui-slider-progress.html">Sliders &amp; Progress</a>
+					</li>
+					<li><a href="ui-modals-popups.html">Modals &amp; Popups</a>
+					</li>
+					<li><a href="ui-icons.html">Icons</a>
+					</li>
+					<li><a href="ui-grid.html">Grid</a>
+					</li>
+					<li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a>
+					</li>
+					<li><a href="ui-nestable-list.html">Nestable Lists</a>
+					</li>
 				</ul>
+			</li>
+			<li class="sub-menu">
+				<a href="javascript:void(0);"><i class="fa fa-table"></i><span>Tables</span><i
+						class="arrow fa fa-angle-right pull-right"></i></a>
+				<ul>
+					<li><a href="tables-basic.html">Basic Tables</a>
+					</li>
 
-				<button class="drop-btn">Css Справочник
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-
-					<div class="link-wrap">
-						<a href="css_reference.html">Css Элементы</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="selectors.html">Css Селекторы</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">Css Функции</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">Css Анимация</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-				</div>
-
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-				</div>
-
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-				</div>
-
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-				</div>
-
-				<button class="drop-btn">Projects
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</button>
-				<div class="sidenav__drop-container">
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-					<div class="link-wrap">
-						<a href="">link - 1</a>
-						<i class="fa fa-share fa-rotate-180" aria-hidden="true"></i>
-					</div>
-
-				</div>
-
-			</div>
-			<div class="sidenav__vertical-text">Side--Bar--Menu</div>
-		</div>
-		<!--? top menu - Start -->
-		<nav id="menu" class="menu">
-			<ul>
-				<li>
-					<a href="index.html">
-						<i class="fa fa-home fa-lg" ria-hidden="true"></i>
-					</a>
-				</li>
-				<li><a href=""></a></li>
-				<li class="selected"><a href="css_reference.html"></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href="">
-						<i class="fa fa-compress fa-lg" aria-hidden="true"></i></a>
-				</li>
-				<div class="current">
-					<div class="ctoparr"></div>
-					<div class="cbotarr"></div>
-				</div>
-			</ul>
-		</nav>
-		<!--? top menu - End -->
-
-		<div id="content" class="content">
-			<h1 class="block-name">CSS Селекторы</h1>
-		</div>
-
-		<div class="side-right">
-			<div class="block-name-right">- A -</div>
-		</div>
-		<div id="middle" class="middle">
-			<div class="middle__wrapp">
-
-			</div>
-		</div>
-
-		<div id="footer" class="footer sticky-bottom">
-
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-		</div>
+					<li><a href="tables-data.html">Data Tables</a>
+					</li>
+				</ul>
+			</li>
+			<li class="sub-menu">
+				<a href="javascript:void(0);"><i class="fa fa fa-tasks"></i><span>Forms</span><i
+						class="arrow fa fa-angle-right pull-right"></i></a>
+				<ul>
+					<li><a href="forms-components.html">Components</a>
+					</li>
+					<li><a href="forms-validation.html">Validation</a>
+					</li>
+					<li><a href="forms-mask.html">Mask</a>
+					</li>
+					<li><a href="forms-wizard.html">Wizard</a>
+					</li>
+					<li><a href="forms-multiple-file.html">Multiple File Upload</a>
+					</li>
+					<li><a href="forms-wysiwyg.html">WYSIWYG Editor</a>
+					</li>
+				</ul>
+			</li>
+			<li class="sub-menu">
+				<a href="javascript:void(0);"><i class="fa fa-envelope"></i><span>Mail</span><i
+						class="arrow fa fa-angle-right pull-right"></i></a>
+				<ul>
+					<li class="active"><a href="mail-inbox.html">Inbox</a>
+					</li>
+					<li><a href="mail-compose.html">Compose Mail</a>
+					</li>
+				</ul>
+			</li>
+			<li class="sub-menu">
+				<a href="javascript:void(0);"><i class="fa fa-bar-chart-o"></i><span>Charts</span><i
+						class="arrow fa fa-angle-right pull-right"></i></a>
+				<ul>
+					<li><a href="charts-chartjs.html">Chartjs</a>
+					</li>
+					<li><a href="charts-morris.html">Morris</a>
+					</li>
+					<li><a href="charts-c3.html">C3 Charts</a></li>
+				</ul>
+			</li>
+			<li class="sub-menu">
+				<a href="javascript:void(0);"><i class="fa fa-map-marker"></i><span>Maps</span><i
+						class="arrow fa fa-angle-right pull-right"></i></a>
+				<ul>
+					<li><a href="map-google.html">Google Map</a>
+					</li>
+					<li><a href="map-vector.html">Vector Map</a>
+					</li>
+				</ul>
+			</li>
+			<li class="sub-menu">
+				<a href="typography.html"><i class="fa fa-text-height"></i><span>Typography</span></a>
+			</li>
+			<li class="sub-menu">
+				<a href="javascript:void(0);"><i class="fa fa-file"></i><span>Pages</span><i
+						class="arrow fa fa-angle-right pull-right"></i></a>
+				<ul>
+					<li><a href="pages-blank.html">Blank Page</a>
+					</li>
+					<li><a href="pages-login.html">Login</a>
+					</li>
+					<li><a href="pages-sign-up.html">Sign Up</a>
+					</li>
+					<li><a href="pages-calendar.html">Calendar</a>
+					</li>
+					<li><a href="pages-timeline.html">Timeline</a>
+					</li>
+					<li><a href="pages-404.html">404</a>
+					</li>
+					<li><a href="pages-500.html">500</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
 	</div>
-
-
-
-
+</aside>
 
 
 </body>

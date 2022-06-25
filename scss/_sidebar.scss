@@ -1,6 +1,6 @@
 //? The side navigation menu */
 
-.sidenav {
+.sidebar {
 	display: flex;
 	flex-wrap: nowrap;
 	position: sticky;
@@ -11,13 +11,17 @@
 	width: 0; //? 0 width - change this with JavaScript */
 	z-index: 1; //? Stay on top */
 	padding-right: 1.125rem;
-	background-color: var(--bg-color-0f);
-	overflow: hidden; //? Disable horizontal scroll*/
-	transition: 1.5s; //? 0.9 second transition effect to slide in the sidenav*/
+	background-color: var(--bg-color-bn);
+	overflow: hidden; //? Disable horizontal, vertical scroll*/
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out; //? 0.5 second transition effect to slide in the sidenav*/
 	border-radius: 0px 5px 5px 0;
 	box-shadow: var(--box-shl-d);
 	border-top: 1px solid var(--color-gray);
-
+	line-height: 1;
 
 	&__link {
 		width: 100%;
@@ -26,7 +30,6 @@
 		overflow: hidden;
 		transition: 1s;
 	}
-
 
 	&__vertical-text {
 		writing-mode: vertical-rl;
@@ -47,12 +50,10 @@
 		margin: 0 auto;
 		width: 90%;
 		white-space: nowrap;
-		box-shadow: inset 3px 0px 8px -9px #fff;
+		box-shadow: var(--box-shw-ins-l);
 		border-radius: 0 8px;
 	}
-
 }
-
 //?  Выпадающий контейнер (по умолчанию скрыт). Необязательно: добавьте более светлый цвет фона и некоторые левые отступы, чтобы изменить дизайн выпадающего содержимого */
 .drop-btn {
 	display: block;
@@ -92,7 +93,7 @@
 }
 
 //? The navigation menu links*/
-.sidenav a {
+.sidebar a {
 	display: block;
 	width: 70%;
 	height: 60px;
@@ -102,11 +103,11 @@
 	transition: 2s;
 	border-radius: 30px;
 	height: 30px;
-
+	white-space: nowrap;
 }
 
 //? When you mouse over the navigation links, change their color
-.sidenav a:hover,
+.sidebar a:hover,
 .drop-btn:hover {
 	opacity: 1;
 	transition: 1s;
@@ -125,3 +126,101 @@ a:hover~.fa-share {
 	line-height: 30px;
 	opacity: 1;
 }
+
+.fa-share {
+	position: relative;
+	opacity: 0;
+	transition: 1s;
+	float: left;
+	top: 0;
+	bottom: 0;
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 30px;
+}
+
+.fa-angle-double-left {
+	position: relative;
+	float: right;
+	display: block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 2;
+	border-radius: 30px;
+}
+
+.fa-angle-double-left:hover,
+.drop-btn:hover {
+	box-shadow: var(--box-shw-r);
+	z-index: 9;
+}
+
+
+
+
+// ? Accordion Menus
+.dropp-btm {
+	display: block;
+	width: 90%;
+	height: 30px;
+	padding-left: 0.5rem;
+	margin: 0.5rem 0.5rem 0;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 2;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+	border-radius: 2rem;
+	font-size: 0.875rem;
+	color: var(--color-gray);
+	background-color: var(--bg-color);
+	border: 1px solid var(--color-gray);
+	transition: 1s;
+}
+
+.dropp-btm:hover {
+	width: 80%;
+	color: var(--a-hover);
+	box-shadow: var(--box-shw-r);
+}
+
+.dropp-menu {
+	margin-left: 1.125rem;
+	position: relative;
+	width: 85%;
+	height: 0;
+	opacity: 0;
+	left: 200%;
+	visibility: hidden;
+	color: var(--a-hover);
+	transition: 1s;
+}
+
+.link-wrapp {
+	width: 100%;
+	height: 30px;
+	display: flex;
+	flex-wrap: nowrap;
+	border-radius: 30px;
+	line-height: 2;
+}
+
+.dropp-btm:hover~.dropp-menu,
+.dropp-menu:hover {
+	position: relative;
+	left: 0;
+	visibility: visible;
+	height: 150px;
+	box-shadow: var(--box-shw-ins-l);
+	border-radius: 5px;
+	left: 0;
+	opacity: 1;
+}
+
+
+

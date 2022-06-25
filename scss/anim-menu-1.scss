@@ -36,7 +36,7 @@
 #top-menu li:hover>ul {
 	visibility: visible;
 }
-#top-menu {
+#top-menu {border: 1px solid rgb(0, 191, 255);
 	padding: 0 5px;
 }
 
@@ -48,7 +48,7 @@
 	border-radius: 5px;
 }
 
-#top-menu:after {
+#top-menu:after {border: 1px solid red;
 	content: "";
 	clear: both;
 	display: block;

@@ -1,0 +1,128 @@
+﻿@charset "utf-8";
+
+// ? Обнуляющий код
+html {
+	width: 100%;
+	max-width: 100%;
+	font-size: 16px;
+	line-height: 1.5;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-color: #212121;
+	background-size: contain;
+	background-image: linear-gradient(270deg, #212121 0%, #212121 100%);
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	height: auto;
+	background-color: #14171a;
+	color: #96b9d0cb;
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0 none;
+}
+
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	box-sizing: inherit;
+	-moz-box-sizing: inherit;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+a:hover {
+	color: var(--a-hover);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	font-style: italic;
+}
+
+a:visited {
+	text-emphasis: none;
+	vertical-align: middle;
+}
+
+//  ? Изменить стиль выделения текста
+::selection {
+	background-color: #55595c;
+	color: rgb(14, 208, 218);
+	text-shadow: 0 1px 0 #000;
+}
+
+::-moz-selection {
+	background-color: #55595c;
+	color: rgb(14, 208, 218);
+	text-shadow: 0 1px 0 #000;
+}
+
+// ? Изменить стиль полосы прокрутки (скролл бара)
+::-webkit-scrollbar {
+	width: 0.5rem;
+	padding: 0.5px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--bg-color-bn);
+	border-radius: 2px;
+	border: 1px solid gray;
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .25) 25%,
+			transparent 25%,
+			transparent 50%,
+			rgba(255, 255, 255, .25) 50%,
+			rgba(255, 255, 255, .25) 75%,
+			transparent 75%,
+			transparent);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #02272a;
+}
+
+
+
+// * {border: 0px solid green !important;}

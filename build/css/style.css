@@ -600,7 +600,7 @@ div.header {
 	display: flex;
 }
 
-.sidenav__link {
+.sidebar__link {
 	width: 90%;
 	line-height: 100%;
 	text-align: left;
@@ -610,7 +610,7 @@ div.header {
 	transition: 1s;
 }
 
-.sidenav__vertical-text {
+.sidebar__vertical-text {
 	-webkit-writing-mode: vertical-rl;
 	-ms-writing-mode: tb-rl;
 	writing-mode: vertical-rl;
@@ -629,11 +629,8 @@ div.header {
 	box-shadow: 0 0 5px #4e4e4f;
 }
 
-div1 .sidenav:hover {
-	width: 150px;
-}
 
-.sidenav a {
+.sidebar a {
 	padding: 0.5em 0.5em 0.5em 1.5em;
 	text-decoration: none;
 	font-size: 14px;
@@ -644,15 +641,15 @@ div1 .sidenav:hover {
 	transition: 0.5s;
 }
 
-.sidenav a:hover {
+.sidebar a:hover {
 	color: #ff6532;
 }
 
 @media screen and (max-height: 450px) {
-	.sidenav {
+	.sidebar {
 		padding-top: 15px;
 	}
-	.sidenav a {
+	.sidebar a {
 		font-size: 18px;
 	}
 }

@@ -1,7 +1,7 @@
 html {
   width: 100%;
   max-width: 100%;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,7 +13,7 @@ html {
   background-image: -o-linear-gradient(right, #212121 0%, #212121 100%);
   background-image: linear-gradient(270deg, #212121 0%, #212121 100%);
   -webkit-font-smoothing: antialiased;
-  border: 2px solid #0011ff;
+  border: 0px solid #0011ff;
 }
 
 body {
@@ -21,7 +21,6 @@ body {
   background-color: #14171a;
   color: #96b9d0cb;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-  border: 0px solid #fbff00;
 }
 
 * {

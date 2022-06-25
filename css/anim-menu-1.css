@@ -37,6 +37,7 @@
 }
 
 #top-menu {
+  border: 1px solid deepskyblue;
   padding: 0 5px;
 }
 
@@ -47,6 +48,7 @@
 }
 
 #top-menu:after {
+  border: 1px solid red;
   content: "";
   clear: both;
   display: block;

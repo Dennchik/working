@@ -1,44 +1,83 @@
-@import "variables", "header", "form-serch", "menu", "content", "grid", "sidebar", "modifiers", "animation", "null", "bg-grid", "fa-icon", "media";
+@import "variables", "reset", "header", "form-serch", "menu", "content", "grid", "sidebar", "modifiers", "animation", "bg-grid", "media";
 
 
+.sidebar {
+	#left-nav {
+		margin: 0 auto;
+		width: 100%;
+		white-space: nowrap;
+		box-shadow: var(--box-shw-ins-l);
+		border-radius: 0 8px;
 
-.dropp-btm {
+		ul {
+			li {
+				margin: 0.5em auto;
+				width: 90%;
+				border-radius: 2rem;
+				line-height: 2;
+				color: var(--color-gray);
 
-	height: 1.875em;
+				transition: 1s;
 
+				a {
+					color: #1aaebc;
+					width: 100%;
+					background-color: var(--bg-color);
+					border: 1px solid var(--color-gray);
 
-	display: block;
+				}
+				&.active {
+					&>a {
 
-	border-radius: 30px;
-	white-space: nowrap;
-	color: var(--color-gray);
-	background-color: var(--bg-color);
-	border: 1px solid var(--color-gray);
-	border: 1px solid blueviolet;
+						color: var(--a-hover);
+					}
+
+					ul {
+						display: block;
+					}
+				}
+
+				a {
+					display: block;
+					outline: 0;
+					-webkit-transition: all 200ms ease-in;
+					-moz-transition: all 200ms ease-in;
+					-o-transition: all 200ms ease-in;
+					-ms-transition: all 200ms ease-in;
+					transition: all 200ms ease-in;
+
+					&:hover {
+						color: var(--a-hover);
+					}
+
+					span {
+						display: inline-block;
+					}
+				}
+			}
+		}
+
+		ul ul {
+			display: none;
+
+			li {
+				width: 95%;
+				margin-bottom: 0;
+				margin-right: 0;
+				border-bottom: none;
+
+				a {
+					width: 100%;
+					display: flex;
+					flex-wrap: nowrap;
+					border-radius: 30px;
+					line-height: 2;
+				}
+			}
+		}
+	}
 }
 
-.drop-menu {
-	border: 1px solid rgb(234, 255, 0);
-	border: 1px solid red;
-	display: none;
-	width: 90%;
-}
-
-.dropp-btm:hover {border: 1px solid red;
-	
-	width: 70%;
-	color: var(--a-hover);
-	box-shadow: var(--box-shw-r);
-}
-
-div.sidenav__link>ul:hover,
-div.dropp-btm:hover~ul {
-	display: block;
-	position: relative;
-	color: var(--a-hover);
-	transition: 1s;
-	width: 90%;
-	margin-left: 1.125rem;
-	top: -0.5rem;
-
+.nano-content {
+	border: 0px solid red;
 }

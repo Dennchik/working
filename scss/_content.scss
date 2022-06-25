@@ -1,50 +1,36 @@
 .content {
-	margin: 0.5em 4.8rem 0 5.3rem;
-	font-size: calc(14px + (16 - 10) * ((100vw - 500px) / (1920 - 500)));
-	margin-right: calc(8px + (76.8 - 8) * ((100vw - 320px) / (1560 - 500)));
-	margin-left: calc(8px + (76.8 - 18) * ((100vw - 320px) / (1560 - 500)));
+	margin-top: 0.5rem;
+	margin-left: calc(8px + (84.8 - 8) * ((100vw - 320px) / (1600 - 320)));
+	margin-right: calc(8px + (64 - 8) * ((100vw - 320px) / (1600 - 320)));
 	background-color: var(--bg-color-13);
 	box-shadow: var(--box-shm-d);
 }
 
 .block-wrap {
 	width: 100%;
-	height: 100%;
+	padding-bottom: 0.5rem;
 }
 
 .block-name {
 	position: sticky;
 	top: 2.5rem;
-	height: 1.875rem;
-	line-height: 1.875rem;
+	height: 2.188rem;
+	line-height: 2.188rem;
 	text-align: left;
 	text-transform: uppercase;
-	padding-left: 1rem;
-	font-size: 1.2rem;
-	font-size: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
+	padding-left: 0.5rem;
+	font-size: var(--font-12-18);
 	color: var(--block-name);
 	border-top: 1px solid var(--color-gray);
 	border-bottom: 1px solid var(--color-gray);
-	background-color: var(--bg-color-0f);
-}
-
-.block-name-right {
-	height: 1.875rem;
-	line-height: 1.875rem;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 1.2rem;
-	font-size: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
-	color: var(--block-name);
-	border-top: 1px solid var(--color-gray);
-	border-bottom: 1px solid var(--color-gray);
-	background-color: var(--bg-color-0f);
+	background-color: var(--bg-color-bn);
 }
 
 .middle {
-	margin: 0.5em 0 0 5.3rem;
-	margin-left: calc(8px + (76.8 - 18) * ((100vw - 320px) / (1560 - 500)));
-	background-color: var(--bg-color-13);
+	display: none;
+	margin: 0.5rem 0 0 5.3rem;
+	margin-left: calc(8px + (84.8 - 8) * ((100vw - 320px) / (1600 - 320)));
+	background-color: var(--bg-color-21);
 	box-shadow: var(--box-shm-d);
 
 	&__wrapp {
@@ -52,20 +38,62 @@
 	}
 }
 
-.side-right {
-	position: sticky;
-	top: 2.5em;
-	height: 100%;
-	margin-top: 0.5em;
-	margin-right: 4.8rem;
-	margin-right: calc(8px + (76.8 - 8) * ((100vw - 320px) / (1560 - 500)));
-	box-shadow: var(--box-shm-d);
-	background-color: var(--bg-color-13);
-}
-
 .footer {
-	background-color: var(--bg-color-0f);
+	background-color: var(--bg-color-bn);
 	box-shadow: var(--box-shx-d);
 	z-index: 2;
-	
 }
+
+.side-right {
+	height: 100%;
+	margin-top: 0.5rem;
+	margin-right: 4rem;
+	margin-right: calc(8px + (64 - 8) * ((100vw - 320px) / (1600 - 320)));
+	box-shadow: var(--box-shm-d);
+	background-color: var(--bg-color-sr);
+}
+
+.block-name-right {
+	display: flex;
+	position: sticky;
+	top: 2.5rem;
+	height: 2.188rem;
+	line-height: 2.188rem;
+	color: var(--block-name);
+	border-top: 1px solid var(--color-gray);
+	background-color: var(--bg-color-bn);
+}
+
+.tablinks {
+	width: 25%;
+	font-size: 16px;
+	text-align: center;
+	color: var(--bg-act-bord);
+	background-color: transparent;
+	border-bottom: 1px solid var(--color-gray);
+}
+
+//* Стиль содержимого вкладки
+.tabcontent {
+	float: left;
+	width: 100%;
+	font-size: var(--font-11-16);
+}
+
+//* Изменение цвета фона кнопок при наведении курсора мыши 
+.block-name-right button:hover {
+	color: var(--a-hover);
+	cursor: pointer;
+}
+
+//* Создание класса активной/текущей "вкладки кнопки" 
+.block-name-right button.select{
+	color: var(--a-hover);
+	border-bottom: 1px solid var(--color-orange);
+
+	width: 25%;
+	z-index: 7;
+
+}
+
+

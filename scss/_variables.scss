@@ -1,7 +1,7 @@
 :root {
-	--bg-color-0f: #0f1317;
-	--bg-color-13: #191919;
-	--bg-color-21: #212121;
+	--bg-color-bn: #0f1317;
+	--bg-color-13: #191919b2;
+	--bg-color-sr: #1414145d;
 	--bg-color-1c: #1c2023;
 	--block-name: #0595af; //* Color name Block
 	--color-link: #01606b; //* Color link
@@ -16,6 +16,7 @@
 	--box-shw-r: 5px 0px 5px -4px #fff;
 	--box-shw-l: -5px 0px 5px -4px #fff;
 	--box-shw-s: 3px -3px 5px -4px rgba(255, 255, 255, 0.671);
+	--box-shw-ins-l: inset 3px 0px 8px -9px #fff;
 	--box-sht-d: 0px 10px 5px -4px rgba(13, 8, 8, 0.934);
 	--box-shl-d: 10px 3px 8px -4px rgba(13, 8, 8, 0.934);
 	--box-shx-d: 0px -10px 5px -4px rgba(11, 11, 11, 0.934);
@@ -24,5 +25,11 @@
 	--font-l: 18px;
 	--font-m: 16px;
 	--font-s: 12px;
+	--font-11-14: calc(11px + (14 - 11) * ((100vw - 320px) / (1600 - 320)));
+	--font-11-16: calc(11px + (16 - 11) * ((100vw - 320px) / (1600 - 320)));
+	--font-12-18: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
+	--font-h1: calc(10px + (14 - 10) * ((100vw - 320px) / (1600 - 320)));
+	--font-h2: calc(10px + (12 - 10) * ((100vw - 320px) / (1600 - 320)));
+	--calc-mr: calc(8px + (64 - 8) * ((100vw - 320px) / (1600 - 320)));
 	--lgrad-name-str: linear-gradient(to top, #00050c 30%, #13b5d1 50%, #00050c 80%);
 }
