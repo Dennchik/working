@@ -1,4 +1,4 @@
-.grid-conteiner {
+.grid-conteiner {border: 1px solid red;
 	display: grid;
 	grid-template-areas:
 		"header header header"
@@ -9,7 +9,7 @@
 		"footer footer footer";
 	grid-template-columns: 0 1fr 25%;
 	grid-template-rows: 40px 40px 0 1fr 7.75rem 4.345rem;
-	height: auto;
+	// height: auto;
 	min-height: 100vh;
 }
 

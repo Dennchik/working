@@ -768,19 +768,14 @@ a:visited {
 }
 
 .grid-conteiner {
+  border: 1px solid red;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header header header"
- "menu menu menu"
- "search search side-right"
- "sidebar content side-right"
- "sidebar content side-right"
- "footer footer footer";
+      grid-template-areas: "header header header" "menu menu menu" "search search side-right" "sidebar content side-right" "sidebar content side-right" "footer footer footer";
   -ms-grid-columns: 0 1fr 25%;
       grid-template-columns: 0 1fr 25%;
   -ms-grid-rows: 40px 40px 0 1fr 7.75rem 4.345rem;
       grid-template-rows: 40px 40px 0 1fr 7.75rem 4.345rem;
-  height: auto;
   min-height: 100vh;
 }
 
@@ -1317,12 +1312,7 @@ a:hover ~ .fa-share {
     border: 1px solid green;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header header "
- "menu menu"
- "search search"
- "sidebar content"
- "sidebar middle"
- "footer footer";
+        grid-template-areas: "header header " "menu menu" "search search" "sidebar content" "sidebar middle" "footer footer";
     -ms-grid-columns: 0 1fr;
         grid-template-columns: 0 1fr;
     -ms-grid-rows: 2.5rem 2.5rem 0 1fr 7.75rem 4.345rem;
